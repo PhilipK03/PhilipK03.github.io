@@ -5,10 +5,8 @@
 
 .homeWrapper {
   height: 100%;
-  width: 100%;
   background-image: url("Assets/HomeBackground.jpg");
   opacity: 25%;
-  top: 0;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
