@@ -1,6 +1,20 @@
 .background {
   background-image: url("Assets/textureBackground.jpg");
+  opacity: 50%;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
+}
+
+.mainContainer {
+  height: 90%;
+  width: 80%;
+  margin-top: auto;
+  margin-bottom: auto;
+  background-color: #06aed5;
+}
+
+.mainHeader {
+  text-align: center;
+  color: #f0c808;
 }
