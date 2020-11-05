@@ -1,21 +1,17 @@
 .homeHeader {
   text-align: center;
-  margin-top: 2em;
   color: aliceblue;
 }
 
-.homeBody {
+.homeWrapper {
   height: 100%;
-}
-
-.homeBackgroundImage {
-  /* The image used */
+  width: 100%;
   background-image: url("Assets/HomeBackground.jpg");
-
-  /* Full height */
-  height: 100%;
-
-  /* Center and scale the image nicely */
+  opacity: 25%;
+  animation-duration: 0.5s;
+  animation-name: opacityFade;
+  position: absolute;
+  top: 0;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
