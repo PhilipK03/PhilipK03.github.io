@@ -3,3 +3,10 @@
   margin-top: 2em;
   color: aliceblue;
 }
+
+.homeBackgroundImage {
+  background-image: url("Assets/HomeBackground.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
