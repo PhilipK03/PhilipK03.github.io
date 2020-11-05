@@ -4,9 +4,20 @@
   color: aliceblue;
 }
 
+.homeBody {
+  height: 100%;
+  margin: 0;
+}
+
 .homeBackgroundImage {
+  /* The image used */
   background-image: url("Assets/HomeBackground.jpg");
+
+  /* Full height */
+  height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
   background-repeat: no-repeat;
-  background-attachment: fixed;
   background-size: cover;
 }
