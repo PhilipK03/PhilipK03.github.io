@@ -7,14 +7,11 @@
 }
 
 .mainContainer {
-  height: 90%;
-  width: 80%;
-  margin-top: auto;
-  margin-bottom: auto;
-  background-color: #06aed5;
+  display: flex;
+  background-color: #fff1d0;
 }
 
 .mainHeader {
   text-align: center;
-  color: #f0c808;
+  color: #06aed5;
 }
