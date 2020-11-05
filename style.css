@@ -1,3 +1,4 @@
 .background {
   background-image: url("Assets/textureBackground.jpg");
+  height: 100%;
 }
