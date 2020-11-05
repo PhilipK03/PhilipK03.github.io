@@ -8,9 +8,6 @@
   width: 100%;
   background-image: url("Assets/HomeBackground.jpg");
   opacity: 25%;
-  animation-duration: 0.5s;
-  animation-name: opacityFade;
-  position: absolute;
   top: 0;
   background-position: center;
   background-repeat: no-repeat;
