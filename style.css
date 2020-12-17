@@ -3,12 +3,14 @@
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
+  opacity: 5%;
 }
 
 .mainContainer {
   display: flex;
   opacity: 95%;
   background-color: #fff1d0;
+  margin: 5em;
 }
 
 .mainHeader {
