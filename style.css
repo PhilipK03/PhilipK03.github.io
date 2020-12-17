@@ -5,15 +5,25 @@
   background-size: cover;
 }
 
-.mainContainer {
+.homeMainContainer {
   display: flex;
-  opacity: 95%;
-  background-color: #fff1d0;
-  margin: 5em;
+  margin: auto;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
 }
 
-.mainHeader {
-  text-align: center;
-  justify-content: center;
+.homeHeaderContainer {
+  background-color: white;
+}
+
+.homeHeader {
+  position: relative;
+  top: 4.7em;
   color: #06aed5;
 }
