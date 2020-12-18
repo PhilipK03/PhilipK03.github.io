@@ -1,8 +1,7 @@
+@import "Variables";
+
 .background {
-  background-image: url("Assets/textureBackground.jpg");
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
+  background-color: darkBlue1;
 }
 
 .homeMainContainer {
@@ -16,10 +15,6 @@
   flex-flow: column;
   justify-content: center;
   align-items: center;
-}
-
-.homeHeaderContainer {
-  background-color: white;
 }
 
 .homeHeader {
