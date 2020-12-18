@@ -1,7 +1,13 @@
-@import "Variables";
+:root {
+  --mainDarkBlue: #1b143d;
+  --mainBlue: #3f88c5;
+  --lightBlue: #99f8ff;
+  --orange: #f49d37;
+  --lightOrange: #f47352;
+}
 
 .background {
-  background-color: darkBlue1;
+  background-color: var(--mainDarkBlue);
 }
 
 .homeMainContainer {
@@ -18,5 +24,5 @@
 }
 
 .homeHeader {
-  color: #06aed5;
+  color: var(--mainBlue);
 }
