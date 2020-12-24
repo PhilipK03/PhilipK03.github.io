@@ -9,18 +9,29 @@
        Fonts: Consolas */
 }
 
+body {
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  font-family: var(--homeFont);
+}
+
+.homeMainContainer {
+  display: flex;
+}
+
 /* Container for About half on the home page */
 .homeLeftContainer {
-  display: flex;
-  flex-direction: row;
+  flex: 1;
+  flex-direction: column;
   background-color: var(--lightBlue);
 }
 
 /* Container for the word doodle half of the home page */
 .homeRightContainer {
-  display: flex;
-  flex-direction: row;
-  background-color: var(--lightBlue);
+  flex: 1;
+  flex-direction: column;
+  background-color: white;
 }
 
 /* Center contatiner for the Name header and page link icons */
@@ -40,5 +51,4 @@
 /* Home header */
 .homeHeader {
   color: var(--blue);
-  font-family: var(--homeFont);
 }
