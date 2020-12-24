@@ -1,20 +1,30 @@
 :root {
-  --mainDarkBlue: #1b143d;
-  --mainBlue: #3f88c5;
+  --darkBlue: #1b143d;
+  --blue: #3f88c5;
   --lightBlue: #99f8ff;
   --orange: #f49d37;
   --lightOrange: #f47352;
+  --homeFont: Consolas;
   /* Website palette https://coolors.co/1b143d-3f88c5-99f8ff-f49d37-f47352
        Fonts: Consolas */
 }
 
-/* Main page background */
-.background {
-  background-color: var(--mainDarkBlue);
+/* Container for About half on the home page */
+.homeLeftContainer {
+  display: flex;
+  flex-direction: row;
+  background-color: var(--lightBlue);
+}
+
+/* Container for the word doodle half of the home page */
+.homeRightContainer {
+  display: flex;
+  flex-direction: row;
+  background-color: var(--lightBlue);
 }
 
 /* Center contatiner for the Name header and page link icons */
-.homeMainContainer {
+.homeAboutContainer {
   display: flex;
   margin: auto;
   position: absolute;
@@ -29,5 +39,6 @@
 
 /* Home header */
 .homeHeader {
-  color: var(--mainBlue);
+  color: var(--blue);
+  font-family: var(--homeFont);
 }
