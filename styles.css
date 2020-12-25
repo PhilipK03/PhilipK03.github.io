@@ -9,35 +9,37 @@
        Fonts: Consolas */
 }
 
-body {
-  display: flex;
-  justify-content: center;
-  margin: 0px;
+html,
+body,
+section {
   height: 100%;
+}
+
+body {
+  color: #fff;
   font-family: var(--homeFont);
+  font-size: 1.25rem;
+  line-height: 150%;
+  text-align: center;
+  text-shadow: 0 2px 2px #b6701e;
 }
 
 .homeMainContainer {
   display: flex;
-  width: 100%;
-  justify-content: center;
-  text-align: center;
 }
 
 /* Container for About half on the home page */
 .homeLeftContainer {
   flex: 1;
-  flex-direction: column;
-  height: 100%;
   background-color: var(--lightBlue);
+  padding: 1rem;
 }
 
 /* Container for the word doodle half of the home page */
 .homeRightContainer {
   flex: 1;
-  flex-direction: column;
-  height: 100%;
-  background-color: white;
+  background-color: var(--blue);
+  padding: 1rem;
 }
 
 /* Center contatiner for the Name header and page link icons */
