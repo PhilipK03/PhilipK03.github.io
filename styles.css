@@ -21,7 +21,7 @@ body {
   font-size: 1.25rem;
   line-height: 150%;
   text-align: center;
-  text-shadow: 0 2px 2px #b6701e;
+  text-shadow: 0 2px 2px var(--lightOrange);
 }
 
 .homeMainContainer {
@@ -37,11 +37,16 @@ body {
 
 /* Container for the word doodle half of the home page */
 .homeRightContainer {
+  display: flex;
   flex: 1;
   background-color: var(--blue);
   padding: 1rem;
 }
 
+.homeRightWordArt {
+  flex: 1;
+  justify-content: center;
+}
 /* Center contatiner for the Name header and page link icons */
 .homeAboutContainer {
   display: flex;
