@@ -9,15 +9,15 @@
        Fonts: Consolas */
 }
 
+::-webkit-scrollbar {
+  width: 0px; /* Remove scrollbar space */
+  background: transparent; /* Optional: just make scrollbar invisible */
+}
+
 html,
 body,
 section {
   height: 100%;
-}
-
-::-webkit-scrollbar {
-  width: 0px; /* Remove scrollbar space */
-  background: transparent; /* Optional: just make scrollbar invisible */
 }
 
 body {
@@ -71,8 +71,8 @@ p {
 
 .homeLeftInformation {
   flex: 2;
-  /*overflow: scroll;
-  overflow-x: hidden;*/
+  overflow: scroll;
+  overflow-x: hidden;
 }
 
 /* Container for the word doodle half of the home page */
