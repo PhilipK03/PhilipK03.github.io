@@ -9,10 +9,26 @@
        Fonts: Consolas */
 }
 
+body {
+  margin: 0px;
+}
+
 html,
 body,
 section {
   height: 100%;
+}
+
+h1 {
+  font-size: 1.75em;
+  text-shadow: 0 2px 2px var(--orange);
+  color: var(--darkBlue);
+}
+
+h2 {
+  font-size: 1.5em;
+  text-shadow: 0 2px 2px var(--lightOrange);
+  color: var(--blue);
 }
 
 body {
@@ -21,7 +37,6 @@ body {
   font-size: 1.25rem;
   line-height: 150%;
   text-align: center;
-  text-shadow: 0 2px 2px var(--lightOrange);
 }
 
 .homeMainContainer {
@@ -59,9 +74,4 @@ body {
   flex-flow: column;
   justify-content: center;
   align-items: center;
-}
-
-/* Home header */
-.homeHeader {
-  color: var(--blue);
 }
