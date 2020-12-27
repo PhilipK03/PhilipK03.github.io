@@ -28,21 +28,20 @@ body {
 h1 {
   font-size: 2.75em;
   text-shadow: 0 2px 2px var(--orange);
-  color: var(--darkBlue);
+  color: var(--blue);
 }
 
 /* Sub-Heading */
 h2 {
   font-size: 1.75em;
   text-shadow: 0 2px 2px var(--orange);
-  color: var(--darkBlue);
+  color: var(--blue);
 }
 
 /* Styling for normal text */
 p {
-  color: var(--blue);
+  color: var(--darkBlue);
   font-size: 0.75em;
-  padding: 0.5em;
 }
 
 /* Container for split pages on the home page*/
