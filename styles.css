@@ -71,8 +71,8 @@ p {
 
 .homeLeftInformation {
   flex: 2;
-  overflow: scroll;
-  overflow-x: hidden;
+  /*overflow: scroll;
+  overflow-x: hidden;*/
 }
 
 /* Container for the word doodle half of the home page */
