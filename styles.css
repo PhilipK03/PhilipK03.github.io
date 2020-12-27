@@ -55,6 +55,8 @@ p {
   flex: 1;
   background-color: var(--lightBlue);
   justify-content: center;
+  align-items: center;
+  flex-flow: column;
   padding: 2em;
 }
 
