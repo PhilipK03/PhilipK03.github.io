@@ -1,16 +1,12 @@
 :root {
-  --darkBlue: #1b143d;
-  --blue: #3f88c5;
-  --lightBlue: #99f8ff;
+  --darkBlue: #26567e;
+  --blue: #3881bc; /* 3f88c5 */
+  --lightBlue: #00e4f5; /* 99f8ff */
   --orange: #f49d37;
   --lightOrange: #f47352;
   --homeFont: Consolas;
   /* Website palette https://coolors.co/1b143d-3f88c5-99f8ff-f49d37-f47352
        Fonts: Consolas */
-}
-
-body {
-  margin: 0px;
 }
 
 html,
@@ -19,35 +15,55 @@ section {
   height: 100%;
 }
 
+body {
+  color: #fff;
+  font-family: var(--homeFont);
+  font-size: 1.25em;
+  line-height: 150%;
+  margin: 0px;
+  text-align: center;
+}
+
+/* Main Heading */
 h1 {
-  font-size: 1.75em;
+  font-size: 2.5em;
   text-shadow: 0 2px 2px var(--orange);
   color: var(--darkBlue);
 }
 
+/* Sub-Heading */
 h2 {
   font-size: 1.5em;
-  text-shadow: 0 2px 2px var(--lightOrange);
+  text-shadow: 0 2px 2px var(--orange);
+  color: var(--darkBlue);
+}
+
+/* Styling for normal text */
+p {
   color: var(--blue);
+  font-size: 1em;
 }
 
-body {
-  color: #fff;
-  font-family: var(--homeFont);
-  font-size: 1.25rem;
-  line-height: 150%;
-  text-align: center;
-}
-
+/* Container for split pages on the home page*/
 .homeMainContainer {
   display: flex;
 }
 
 /* Container for About half on the home page */
 .homeLeftContainer {
+  display: flex;
   flex: 1;
   background-color: var(--lightBlue);
-  padding: 1rem;
+  justify-content: center;
+  padding: 2em;
+}
+
+.homeLeftHeader {
+  flex: 1;
+}
+
+.homeLeftInformation {
+  flex: 2;
 }
 
 /* Container for the word doodle half of the home page */
@@ -61,17 +77,4 @@ body {
 .homeRightWordArt {
   flex: 1;
   justify-content: center;
-}
-/* Center contatiner for the Name header and page link icons */
-.homeAboutContainer {
-  display: flex;
-  margin: auto;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  flex-flow: column;
-  justify-content: center;
-  align-items: center;
 }
