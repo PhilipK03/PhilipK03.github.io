@@ -1,7 +1,7 @@
 :root {
   --darkBlue: #26567e;
   --blue: #3881bc; /* 3f88c5 */
-  --lightBlue: #00e4f5; /* 99f8ff */
+  --lightBlue: #99f8ff;
   --orange: #f49d37;
   --lightOrange: #f47352;
   --homeFont: Consolas;
@@ -30,22 +30,38 @@ body {
 }
 
 /* Main Heading */
-h1 {
+h1.left {
   font-size: 2.75em;
   text-shadow: 0 2px 2px var(--orange);
   color: var(--blue);
 }
 
+h1.right {
+  font-size: 2.75em;
+  text-shadow: 0 2px 2px var(--lightBlue);
+}
+
 /* Sub-Heading */
-h2 {
+h2.left {
   font-size: 1.75em;
   text-shadow: 0 2px 2px var(--orange);
   color: var(--blue);
 }
 
+h2.right {
+  font-size: 1.75em;
+  text-shadow: 0 2px 2px var(--lightBlue);
+  color: var(--blue);
+}
+
 /* Styling for normal text */
-p {
+p.left {
   color: var(--darkBlue);
+  font-size: 0.75em;
+}
+
+p.right {
+  color: var(--lightBlue);
   font-size: 0.75em;
 }
 
@@ -79,11 +95,18 @@ p {
 .homeRightContainer {
   display: flex;
   flex: 1;
-  background-color: var(--blue);
+  background-color: var(--lightOrange);
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
   padding: 1em;
 }
 
-.homeRightWordArt {
+.homeRightHeader {
   flex: 1;
+}
+
+.homeRightWordArt {
+  flex: 2;
   justify-content: center;
 }
