@@ -58,13 +58,13 @@ h2.right {
 p.left {
   color: var(--darkBlue);
   font-size: 0.75em;
-  paddng: 0em 3em 3em 3em;
+  padding: 0em 3em 3em 3em;
 }
 
 p.right {
   color: var(--lightBlue);
   font-size: 0.75em;
-  paddng: 0em 3em 3em 3em;
+  padding: 0em 3em 3em 3em;
 }
 
 /* Container for split pages on the home page*/
