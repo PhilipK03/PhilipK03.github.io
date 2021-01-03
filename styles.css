@@ -58,7 +58,7 @@ h2.right {
 p.left {
   color: var(--darkBlue);
   font-size: 0.75em;
-  padding: 0em 3em 3em 3em;
+  padding: 0em 3em 7em 3em;
 }
 
 p.right {
@@ -88,7 +88,7 @@ p.right {
 }
 
 .homeLeftInformation {
-  flex: 2;
+  flex: 3;
   overflow: scroll;
   overflow-x: hidden;
 }
