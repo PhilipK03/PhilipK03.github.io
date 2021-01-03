@@ -75,7 +75,7 @@ p.right {
 /* Container for About half on the home page */
 .homeLeftContainer {
   display: flex;
-  flex: 9;
+  flex: 1;
   background-color: var(--lightBlue);
   justify-content: center;
   align-items: center;
@@ -108,7 +108,7 @@ p.right {
   flex: 1;
 }
 
-.homeRightWordArt {
+.homeRightWorkExperience {
   flex: 2;
   justify-content: center;
 }
