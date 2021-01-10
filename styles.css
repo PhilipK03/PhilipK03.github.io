@@ -74,26 +74,29 @@ p.right {
   text-align: left;
 }
 
-table.right {
+table {
   padding: 0em 3em 3em 3em;
+  border-collapse: collapse;
 }
 
-tr.rightHeader{
-  text-align: center;
-  font-size: 1.25em;
+td, th {
+  border: 1px solid var(--darkBlue);
+  text-align: left;
+}
+
+th {
   color: var(--blue);
   text-shadow: 0 2px 2px var(--orange);
+  font-size: 1em;
 }
-th {
-  border-color: var(--darkBlue);
-  border-radius: 0.5em;
-  border-width: 0.1em;
-}
-tr.right{
+
+td {
   color: var(--darkBlue);
-  text-shadow: 0 2px 2px var(--orange);
   font-size: 0.75em;
-  text-align: left;
+}
+
+tr:nth-child(even) {
+  background-color: var(--lightBlue);
 }
 
 /* Container for split pages on the home page*/
