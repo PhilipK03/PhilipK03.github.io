@@ -34,12 +34,14 @@ h1.left {
   font-size: 2.75em;
   text-shadow: 0 2px 2px var(--orange);
   color: var(--blue);
+  text-align: center;
 }
 
 h1.right {
   font-size: 2.75em;
   text-shadow: 0 2px 2px var(--lightBlue);
-  color: var(--blue)
+  color: var(--blue);
+  text-align: center;
 }
 
 /* Sub-Heading */
@@ -47,12 +49,14 @@ h2.left {
   font-size: 1.75em;
   text-shadow: 0 2px 2px var(--orange);
   color: var(--blue);
+  text-align: center;
 }
 
 h2.right {
   font-size: 1.75em;
   text-shadow: 0 2px 2px var(--lightBlue);
   color: var(--blue);
+  text-align: center;
 }
 
 /* Styling for normal text */
@@ -60,13 +64,33 @@ p.left {
   color: var(--darkBlue);
   font-size: 1.25em;
   padding: 0em 3em 7em 3em;
+  text-align: left;
 }
 
 p.right {
   color: var(--darkBlue);
   font-size: 1.25em;
   padding: 0em 3em 3em 3em;
-  justify-content: initial;
+  text-align: left;
+}
+
+table.right {
+  font-size: 1.25em;
+  padding: 0em 3em 3em 3em;
+}
+
+tr.rightHeader{
+  text-align: center;
+  color: var(--blue);
+  text-shadow: 0 2px 2px var(--orange);
+  border-color: var(--darkBlue);
+  border-radius: 0.5em;
+  border-width: 0.1em;
+}
+tr.right{
+  color: var(--darkBlue);
+  text-shadow: 0 2px 2px var(--orange);
+  text-align: left;
 }
 
 /* Container for split pages on the home page*/
