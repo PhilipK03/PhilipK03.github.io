@@ -113,7 +113,6 @@ tr:nth-child(even) {
 
 /* Container for About half on the home page */
 .homeLeftContainer {
-  display: flex;
   flex: 1;
   background-color: var(--lightBlue);
   justify-content: center;
@@ -135,7 +134,6 @@ tr:nth-child(even) {
 
 /* Container for the word doodle half of the home page */
 .homeRightContainer {
-  display: flex;
   flex: 1;
   background-color: var(--lightOrange);
   justify-content: center;
