@@ -105,7 +105,7 @@ tr:nth-child(even) {
   flex-direction: row;
 }
 
-@media (max-width: 1100px) {
+@media (max-width: 1200px) {
   .homeMainContainer {
     flex-direction: column;
   }
