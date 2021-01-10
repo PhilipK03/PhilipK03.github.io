@@ -39,6 +39,7 @@ h1.left {
 h1.right {
   font-size: 2.75em;
   text-shadow: 0 2px 2px var(--lightBlue);
+  color: var(--blue)
 }
 
 /* Sub-Heading */
@@ -57,13 +58,13 @@ h2.right {
 /* Styling for normal text */
 p.left {
   color: var(--darkBlue);
-  font-size: 0.75em;
+  font-size: 1.25em;
   padding: 0em 3em 7em 3em;
 }
 
 p.right {
   color: var(--darkBlue);
-  font-size: 0.75em;
+  font-size: 1.25em;
   padding: 0em 3em 3em 3em;
 }
 
