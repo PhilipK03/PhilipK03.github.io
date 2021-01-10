@@ -83,9 +83,12 @@ tr.rightHeader{
   text-align: center;
   color: var(--blue);
   text-shadow: 0 2px 2px var(--orange);
+}
+th {
   border-color: var(--darkBlue);
   border-radius: 0.5em;
   border-width: 0.1em;
+  font-size: 0.75em;
 }
 tr.right{
   color: var(--darkBlue);
