@@ -64,7 +64,7 @@ p.left {
   color: var(--darkBlue);
   font-size: 1.25em;
   padding: 0em 3em 7em 3em;
-  text-align: left;
+  text-align: center;
 }
 
 p.right {
@@ -102,6 +102,14 @@ tr:nth-child(even) {
 /* Container for split pages on the home page*/
 .homeMainContainer {
   display: flex;
+  flex-direction: row;
+}
+
+@media (max-width: 800px) {
+  .homeMainContainer {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 /* Container for About half on the home page */
