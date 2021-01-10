@@ -26,7 +26,7 @@ body {
   font-size: 1.25em;
   line-height: 150%;
   margin: 0px;
-  text-align: center;
+
 }
 
 /* Main Heading */
@@ -66,6 +66,7 @@ p.right {
   color: var(--darkBlue);
   font-size: 1.25em;
   padding: 0em 3em 3em 3em;
+  justify-content: initial;
 }
 
 /* Container for split pages on the home page*/
@@ -79,7 +80,7 @@ p.right {
   flex: 1;
   background-color: var(--lightBlue);
   justify-content: center;
-  align-items: center;
+  text-align: center;
   flex-flow: column;
   padding: 1em;
 }
@@ -101,18 +102,19 @@ p.right {
   flex: 1;
   background-color: var(--lightOrange);
   justify-content: center;
-  align-items: center;
   flex-flow: column;
   padding: 1em;
 }
 
 .homeRightHeader {
   flex: 1;
+  text-align: center;
 }
 
 .homeRightWorkExperience {
   flex: 4;
   justify-content: center;
+  text-align: left;
   overflow: scroll;
   overflow-x: hidden;
 }
