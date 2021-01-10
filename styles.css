@@ -75,12 +75,12 @@ p.right {
 }
 
 table.right {
-  font-size: 1.25em;
   padding: 0em 3em 3em 3em;
 }
 
 tr.rightHeader{
   text-align: center;
+  font-size: 1.25em;
   color: var(--blue);
   text-shadow: 0 2px 2px var(--orange);
 }
@@ -88,11 +88,11 @@ th {
   border-color: var(--darkBlue);
   border-radius: 0.5em;
   border-width: 0.1em;
-  font-size: 0.75em;
 }
 tr.right{
   color: var(--darkBlue);
   text-shadow: 0 2px 2px var(--orange);
+  font-size: 0.75em;
   text-align: left;
 }
 
