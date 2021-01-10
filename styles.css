@@ -2,8 +2,8 @@
   --darkBlue: #26567e;
   --blue: #3881bc; /* 3f88c5 */
   --lightBlue: #99f8ff;
-  --orange: #f49d37;
-  --lightOrange: #f47352;
+  --orange: #c07724;
+  --lightOrange: #caac00c7;
   --homeFont: Consolas;
   /* Website palette https://coolors.co/1b143d-3f88c5-99f8ff-f49d37-f47352
        Fonts: Consolas */
@@ -62,7 +62,7 @@ p.left {
 }
 
 p.right {
-  color: var(--lightBlue);
+  color: var(--darkBlue);
   font-size: 0.75em;
   padding: 0em 3em 3em 3em;
 }
@@ -88,7 +88,8 @@ p.right {
 }
 
 .homeLeftInformation {
-  flex: 3;
+  flex: 4;
+  padding-top: 3em;
   overflow: scroll;
   overflow-x: hidden;
 }
@@ -109,8 +110,10 @@ p.right {
 }
 
 .homeRightWorkExperience {
-  flex: 2;
+  flex: 4;
   justify-content: center;
+  overflow: scroll;
+  overflow-x: hidden;
 }
 
 
