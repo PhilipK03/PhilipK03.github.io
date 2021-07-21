@@ -3,32 +3,65 @@ html {
   height: 100%;
 }
 
-.container-main {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
+body {
   background-image: url("/Assets/darkPossibleBackground.jpeg");
-  font: "Titillium Web", sans-serif;
+  background-position: center;
+}
+
+.container-main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: "Titillium Web", sans-serif;
 }
 
 .container-name-link {
-  flex: 1;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-transform: uppercase;
+  position: relative;
+  top: 1em;
 }
 
 .container-name-link p {
-  font-size: 36px;
-  margin-bottom: 2em;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  font-size: 120px;
+  color: #fefffa;
+  font-weight: 300;
+  letter-spacing: 2px;
+  position: relative;
+  top: 0.5em;
 }
 
 .container-name-link a {
-  font-size: 24px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  font-size: 16px;
+  background: transparent;
+  background-color: transparent;
   color: #fefffa;
-  padding: 1em;
-  border: 0.5em;
-  border-color: #fefffa;
+  padding-top: 1em;
+  padding-right: calc(1.44em - 2px);
+  padding-bottom: 1em;
+  padding-left: 1.44em;
+  border: 2px solid #fefffa;
+  letter-spacing: 3px;
+  font-weight: 300;
+  -webkit-transition: color 170ms ease-in-out, border-color 170ms ease-in-out;
+  transition: color 170ms ease-in-out, border-color 170ms ease-in-out;
 }
 /*# sourceMappingURL=newStyles.css.map */
