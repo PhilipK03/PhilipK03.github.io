@@ -17,7 +17,7 @@ html {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background: color url("/Assets/darkPossibleBackground.jpeg") others;
+  background-image: url("/Assets/darkPossibleBackground.jpeg");
   font: "Titillium Web", sans-serif;
 }
 
@@ -25,6 +25,10 @@ html {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -35,14 +39,14 @@ html {
 
 .container-name-link p {
   font-size: 36px;
-  margin-bottom: 10em;
+  margin-bottom: 2em;
 }
 
 .container-name-link a {
   font-size: 24px;
   color: #fefffa;
-  padding: 5em;
-  border: 1em;
+  padding: 1em;
+  border: 0.5em;
   border-color: #fefffa;
 }
 /*# sourceMappingURL=newStyles.css.map */
