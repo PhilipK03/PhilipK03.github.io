@@ -3,7 +3,7 @@ html {
   height: 100%;
 }
 
-container-main {
+.container-main {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -21,7 +21,7 @@ container-main {
   font: "Titillium Web", sans-serif;
 }
 
-container-name-link {
+.container-name-link {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
@@ -33,12 +33,12 @@ container-name-link {
           justify-content: center;
 }
 
-container-name-link p {
+.container-name-link p {
   font-size: 36px;
   margin-bottom: 10em;
 }
 
-container-name-link a {
+.container-name-link a {
   font-size: 24px;
   color: #fefffa;
   padding: 5em;
