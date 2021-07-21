@@ -4,6 +4,7 @@
   --lightBlue: #99f8ff;
   --orange: #c07724;
   --lightOrange: #caac00c7;
+  --red: #ff6873;
   --homeFont: Consolas;
   /* Website palette https://coolors.co/1b143d-3f88c5-99f8ff-f49d37-f47352
        Fonts: Consolas */
@@ -26,7 +27,6 @@ body {
   font-size: 1.25em;
   line-height: 150%;
   margin: 0px;
-
 }
 
 /* Main Heading */
@@ -79,7 +79,8 @@ table {
   border-collapse: collapse;
 }
 
-td, th {
+td,
+th {
   border: 1px solid var(--darkBlue);
   text-align: left;
 }
@@ -155,6 +156,3 @@ tr:nth-child(even) {
   overflow: scroll;
   overflow-x: hidden;
 }
-
-
-
