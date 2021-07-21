@@ -57,7 +57,7 @@
           mobileWarning.style.display = "none";
         }, 5000);
       } else {
-        canvas.style.width = "960px";
+        canvas.style.width = "969px";
         canvas.style.height = "600px";
       }
       loadingBar.style.display = "block";
@@ -70,7 +70,9 @@
         })
           .then((unityInstance) => {
             loadingBar.style.display = "none";
-            unityInstance.SetFullscreen(1);
+            fullscreenButton.onclick = () => {
+              unityInstance.SetFullscreen(1);
+            };
           })
           .catch((message) => {
             alert(message);
