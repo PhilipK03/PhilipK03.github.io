@@ -29,39 +29,54 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   text-transform: uppercase;
   position: relative;
   top: 1em;
 }
 
 .container-name-link p {
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
   font-size: 120px;
   color: #fefffa;
   font-weight: 300;
   letter-spacing: 2px;
   position: relative;
-  top: 0.5em;
+  top: 0.3em;
+}
+
+.container-name-link p1 {
+  font-size: 15px;
+  color: #fefffa;
+  font-weight: 300;
+  letter-spacing: 2px;
+  position: relative;
+  top: -5.5em;
 }
 
 .container-name-link a {
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
-  font-size: 16px;
   background: transparent;
   background-color: transparent;
-  color: #fefffa;
   padding-top: 1em;
   padding-right: calc(1.44em - 2px);
   padding-bottom: 1em;
   padding-left: 1.44em;
   border: 2px solid #fefffa;
+  cursor: pointer;
+  color: #fefffa;
   letter-spacing: 3px;
   font-weight: 300;
-  -webkit-transition: color 170ms ease-in-out, border-color 170ms ease-in-out;
-  transition: color 170ms ease-in-out, border-color 170ms ease-in-out;
+  font-size: 16px;
+  text-decoration: none;
+  -webkit-transition: color 0.4s ease-in-out, border-color 0.5s ease-in-out, text-shadow 0.1s ease-in-out;
+  transition: color 0.4s ease-in-out, border-color 0.5s ease-in-out, text-shadow 0.1s ease-in-out;
+}
+
+.container-name-link a:hover {
+  background-color: #fefffa;
+  border-color: transparent;
+  color: rgba(48, 69, 92, 0.8);
+  text-shadow: 0.05em 0.05em black;
 }
 /*# sourceMappingURL=newStyles.css.map */

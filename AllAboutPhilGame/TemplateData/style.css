@@ -1,62 +1,188 @@
+.main-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+}
+
+.color-bar {
+  -webkit-box-flex: initial;
+      -ms-flex: initial;
+          flex: initial;
+  height: 5em;
+  width: 100%;
+  background-image: -webkit-gradient(linear, left top, right top, from(#23b7f6), color-stop(#53b7fc), to(#fefffa));
+  background-image: linear-gradient(90deg, #23b7f6, #53b7fc, #fefffa);
+  -webkit-box-shadow: 0 0 1em 0 #16212bcc;
+          box-shadow: 0 0 1em 0 #16212bcc;
+}
+
+.top-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+}
+
+.top-container .name {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  position: relative;
+  top: -0.5em;
+  left: 1em;
+  font-family: "Titillium Web", sans-serif;
+  font-size: 100px;
+  color: #16212bcc;
+  font-weight: 300;
+  letter-spacing: 2px;
+  text-decoration: underline;
+  text-shadow: 2px 2px #53b7fc;
+}
+
+.navbar-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  top: -1em;
+}
+
+.navbar-container ul {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  font-family: "Titillium Web", sans-serif;
+  font-size: 30px;
+}
+
+.navbar-container li a {
+  height: 50px;
+  margin-left: 1em;
+  margin-right: 1em;
+  text-decoration: none;
+  color: #16212bcc;
+  border-bottom: 0.2em solid #fefffa;
+  position: relative;
+  -webkit-transition: color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
+  transition: color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
+}
+
+.navbar-container li a:hover {
+  border-bottom-color: #53b7fc;
+  color: #23b7f6;
+}
+
+/* Unity styling stuff*/
 body {
   padding: 0;
   margin: 0;
 }
+
 #unity-container {
-  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  width: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
-#unity-container.unity-desktop {
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-}
+
 #unity-container.unity-mobile {
   width: 100%;
   height: 100%;
 }
+
 #unity-canvas {
   background: #231f20;
 }
+
 .unity-mobile #unity-canvas {
   width: 100%;
   height: 100%;
 }
+
 #unity-loading-bar {
-  position: absolute;
+  position: relative;
   left: 50%;
   top: 50%;
-  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
   display: none;
 }
+
 #unity-logo {
   width: 154px;
   height: 130px;
   background: url("unity-logo-dark.png") no-repeat center;
 }
+
 #unity-progress-bar-empty {
   width: 141px;
   height: 18px;
   margin-top: 10px;
   background: url("progress-bar-empty-dark.png") no-repeat center;
 }
+
 #unity-progress-bar-full {
   width: 0%;
   height: 18px;
   margin-top: 10px;
   background: url("progress-bar-full-dark.png") no-repeat center;
 }
+
 #unity-footer {
   position: relative;
 }
+
 .unity-mobile #unity-footer {
   display: none;
 }
+
 #unity-webgl-logo {
   float: left;
   width: 204px;
   height: 38px;
   background: url("webgl-logo.png") no-repeat center;
 }
+
 #unity-build-title {
   float: right;
   margin-right: 10px;
@@ -64,18 +190,22 @@ body {
   font-family: arial;
   font-size: 18px;
 }
+
 #unity-fullscreen-button {
   float: right;
   width: 38px;
   height: 38px;
   background: url("fullscreen-button.png") no-repeat center;
 }
+
 #unity-mobile-warning {
   position: absolute;
   left: 50%;
   top: 5%;
-  transform: translate(-50%);
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
   background: white;
   padding: 10px;
   display: none;
 }
+/*# sourceMappingURL=style.css.map */

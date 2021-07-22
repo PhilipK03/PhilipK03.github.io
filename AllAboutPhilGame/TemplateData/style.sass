@@ -1,0 +1,150 @@
+$blue: #23b7f6
+$light-blue: #53b7fc
+$white: rgba(254,255,250,1)
+$grey: rgba(220,231,235,1)
+$red: rgba(255,104,115,1)
+$black: #16212bcc
+$sans: 'Titillium Web', sans-serif
+
+@mixin centerize
+    display: flex
+    justify-content: center
+    align-items: center
+
+.main-container
+    @include centerize
+    flex-flow: column
+
+.color-bar
+    flex: initial
+    height: 5em
+    width: 100%
+    background-image: linear-gradient(90deg, $blue, $light-blue, $white)
+    box-shadow: 0 0 1em 0 $black
+
+.top-container
+    display: flex
+    width: 100%
+    justify-content: left
+    flex: 1
+    flex-flow: column
+    .name
+        flex: 1
+        position: relative
+        top: -0.5em
+        left: 1em
+        font-family: $sans
+        font-size: 100px
+        color: $black
+        font-weight: 300
+        letter-spacing: 2px
+        text-decoration: underline
+        text-shadow: 2px 2px $light-blue
+
+.navbar-container
+    display: flex
+    position: relative
+    top: -1em
+    ul
+        list-style: none
+        @include centerize
+        flex-direction: row
+        font-family: $sans
+        font-size: 30px
+    li
+        a
+            height: 50px
+            margin-left: 1em
+            margin-right: 1em
+            text-decoration: none
+            color: $black
+            border-bottom: 0.2em solid $white
+            position: relative
+            transition: color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out
+            &:hover
+                border-bottom-color: $light-blue
+                color: $blue
+
+/* Unity styling stuff*/
+
+body
+    padding: 0
+    margin: 0
+
+#unity-container
+    display: flex
+    flex: 1
+    width: 100%
+    justify-content: center
+    align-items: center
+
+    &.unity-desktop
+
+    &.unity-mobile
+        width: 100%
+        height: 100%
+
+#unity-canvas
+    background: #231f20
+
+    .unity-mobile &
+        width: 100%
+        height: 100%
+
+#unity-loading-bar
+    position: relative
+    left: 50%
+    top: 50%
+    transform: translate(-50%, -50%)
+    display: none
+
+#unity-logo
+    width: 154px
+    height: 130px
+    background: url("unity-logo-dark.png") no-repeat center
+
+#unity-progress-bar-empty
+    width: 141px
+    height: 18px
+    margin-top: 10px
+    background: url("progress-bar-empty-dark.png") no-repeat center
+
+#unity-progress-bar-full
+    width: 0%
+    height: 18px
+    margin-top: 10px
+    background: url("progress-bar-full-dark.png") no-repeat center
+
+#unity-footer
+    position: relative
+
+    .unity-mobile &
+        display: none
+
+#unity-webgl-logo
+    float: left
+    width: 204px
+    height: 38px
+    background: url("webgl-logo.png") no-repeat center
+
+#unity-build-title
+    float: right
+    margin-right: 10px
+    line-height: 38px
+    font-family: arial
+    font-size: 18px
+
+#unity-fullscreen-button
+    float: right
+    width: 38px
+    height: 38px
+    background: url("fullscreen-button.png") no-repeat center
+
+#unity-mobile-warning
+    position: absolute
+    left: 50%
+    top: 5%
+    transform: translate(-50%)
+    background: white
+    padding: 10px
+    display: none

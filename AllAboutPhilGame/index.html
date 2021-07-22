@@ -8,19 +8,40 @@
     <link rel="stylesheet" href="TemplateData/style.css" />
   </head>
   <body>
-    <div id="unity-container" class="unity-desktop">
-      <canvas id="unity-canvas"></canvas>
-      <div id="unity-loading-bar">
-        <div id="unity-logo"></div>
-        <div id="unity-progress-bar-empty">
-          <div id="unity-progress-bar-full"></div>
+    <div class="main-container">
+      <div class="top-container">
+        <div class="color-bar"></div>
+        
+        
+        <div class="name">Philip Kennedy</div>
+      </div>
+
+      <div class="navbar-container">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Skills</a></li>
+          <li><a href="#">Work</a></li>
+          <li><a href="#">Contact Me</a></li>
+        </ul>
+      </div>
+
+      <!--Unity Game Player
+
+      <div id="unity-container" class="unity-desktop">
+        <canvas id="unity-canvas"></canvas>
+        <div id="unity-loading-bar">
+          <div id="unity-logo"></div>
+          <div id="unity-progress-bar-empty">
+            <div id="unity-progress-bar-full"></div>
+          </div>
         </div>
-      </div>
-      <div id="unity-mobile-warning">
-        View on a desktop device for a more "immersive" experience!
-      </div>
-      <div id="unity-footer">
-        <div id="unity-fullscreen-button"></div>
+        <div id="unity-mobile-warning">
+          View on a desktop device for a more "immersive" experience!
+        </div>
+        <div id="unity-footer">
+          <div id="unity-fullscreen-button"></div>
+        </div>
       </div>
     </div>
 
@@ -43,7 +64,7 @@
       var progressBarFull = document.querySelector("#unity-progress-bar-full");
       var fullscreenButton = document.querySelector("#unity-fullscreen-button");
       var mobileWarning = document.querySelector("#unity-mobile-warning");
-      config.matchWebGLToCanvasSize = false;
+
       // By default Unity keeps WebGL canvas render target size matched with
       // the DOM size of the canvas element (scaled by window.devicePixelRatio)
       // Set this to false if you want to decouple this synchronization from
@@ -64,7 +85,7 @@
         canvas.style.width = "960px";
         canvas.style.height = "600px";
       }
-      loadingBar.style.display = "block";
+      loadingBar.style.display = "none";
 
       var script = document.createElement("script");
       script.src = loaderUrl;
@@ -84,5 +105,7 @@
       };
       document.body.appendChild(script);
     </script>
+
+    -->
   </body>
 </html>

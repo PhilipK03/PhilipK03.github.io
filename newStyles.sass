@@ -21,29 +21,43 @@ body
     display: flex
     flex-direction: column
     align-items: center
+    justify-content: center
     text-transform: uppercase
     position: relative
     top: 1em
 
     p
-        flex: 1
         font-size: 120px
         color: $white
         font-weight: 300
         letter-spacing: 2px
         position: relative
-        top: 0.5em
+        top: 0.3em
+    p1
+        font-size: 15px
+        color: $white
+        font-weight: 300
+        letter-spacing: 2px
+        position: relative
+        top: -5.5em
+
     a
-        flex: 1
-        font-size: 16px
         background: transparent
         background-color: transparent
-        color: $white
         padding-top: 1em
         padding-right: calc(1.44em - 2px)
         padding-bottom: 1em
         padding-left: 1.44em
         border: 2px solid $white
+        cursor: pointer
+        color: $white
         letter-spacing: 3px
         font-weight: 300
-        transition: color 170ms ease-in-out, border-color 170ms ease-in-out
+        font-size: 16px
+        text-decoration: none
+        transition: color 0.4s ease-in-out, border-color 0.5s ease-in-out, text-shadow 0.1s ease-in-out
+        &:hover
+            background-color: $white
+            border-color: transparent
+            color: $black
+            text-shadow: 0.05em 0.05em black
