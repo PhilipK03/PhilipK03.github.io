@@ -4,6 +4,11 @@ $white: rgba(254,255,250,1)
 $grey: rgba(220,231,235,1)
 $red: rgba(255,104,115,1)
 $black: #16212bcc
+$opalRed: #ee6352
+$emeraldGreen: #59cd90
+$cerulean: #3fa7d6
+$yellowRed: #fac05e
+$tangerine: #f79d84
 $sans: 'Titillium Web', sans-serif
 
 @mixin centerize
@@ -14,8 +19,6 @@ $sans: 'Titillium Web', sans-serif
 body
     padding: 0
     margin: 0
-    height: 100%
-    width: 100%
     font-family: $sans
 
 .main-container
@@ -24,98 +27,126 @@ body
     flex-flow: column
     overflow-x: clip
 
-.color-bar
-    flex: initial
-    height: 5em
-    width: 100%
-    background-image: linear-gradient(90deg, $blue, $light-blue, $white)
-    box-shadow: 0 0 1em 0 $black
-
 .top-container
     display: flex
     width: 100%
-    justify-content: left
     flex: auto
-    flex-flow: column
+
+    .color-bar
+        flex: initial
+        height: 5em
+        width: 100%
+        background-image: linear-gradient(90deg, $blue, $light-blue, $white)
+        box-shadow: 0 0 1em 0 $black
     .top-container-left
         flex: 3
-        .name
-            flex: 1
-            position: relative
-            top: -0.5em
-            left: 1em
-            font-family: $sans
-            font-size: 100px
-            color: $black
-            font-weight: 300
-            letter-spacing: 2px
-            text-decoration: underline
-            text-underline-position: under
-            text-shadow: 5px 1px $light-blue
+
     .top-container-right
         flex: 1
-        .body-right-colorBar
-            height: 100%
-            background-color: $light-blue
 
 .body-container
     display: flex
-    align-items: ce
-    width: 100%
-    flex: 1
-    flex-direction: row
-
-.body-left-container
-    display: flex
-    align-items: center
-    flex-direction: column
-    flex: 3
-
-    .navbar-container
-        @include centerize
-        width: 100%
-        position: relative
-        padding-bottom: 1em
-        border-bottom: 0.2em solid $grey
-        top: -1em
-        ul
-            list-style: none
-            @include centerize
-            flex-direction: row
-            font-family: $sans
-            font-size: 30px
-        li
-            a
-                height: 50px
-                margin-left: 1em
-                margin-right: 1em
-                text-decoration: none
-                color: $black
-                border-bottom: 0.2em solid $white
-                position: relative
-                transition: color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out
-                &:hover
-                    border-bottom-color: $light-blue
-                    color: $blue
-    .about-container
-        @include centerize
-        flex-direction: column
-        flex: auto
-        color: $black
-        h1
-            font-size: 60px
-            color: $black
-            font-weight: 400
-            letter-spacing: 2px
-            margin-top: 2em
-        p
-            padding: 0em 8em 4em 8em
-
-.body-right-container
-    display: flex
     align-items: center
     justify-content: center
-    flex-direction: column
+    flex: 1
+    flex-direction: row
+    .body-left-container
+        display: flex
+        align-items: center
+        flex-direction: column
+        flex: 3
+        .name
+            flex: auto
+            h1
+                position: relative
+                top: -0.4em
+                left: -1em
+                margin: 0
+                font-family: $sans
+                font-size: 100px
+                color: $black
+                font-weight: 300
+                letter-spacing: 2px
+                text-decoration: underline
+                text-underline-position: under
+                text-shadow: 5px 1px $light-blue
+        .navbar-container
+            @include centerize
+            flex: auto
+            width: 100%
+            position: sticky
+            padding-top: 0.5em
+            background-color: $white
+            border-bottom: 0.2em solid $grey
+            top: 0em
+            ul
+                list-style: none
+                @include centerize
+                flex-direction: row
+                font-family: $sans
+                font-size: 30px
+            li
+                a
+                    height: 50px
+                    margin-left: 1em
+                    margin-right: 1em
+                    text-decoration: none
+                    color: $black
+                    border-bottom: 0.2em solid $white
+                    position: relative
+                    transition: color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out
+                    &:hover
+                        border-bottom-color: $light-blue
+                        color: $blue
+        .content-container
+            @include centerize
+            flex-flow: column
+            color: $black
+            .about
+                @include centerize
+                width: 100%
+                flex-direction: column
+                background-color: $opalRed
+            .skills
+                width: 100%
+                @include centerize
+                flex-direction: column
+                background-color: $emeraldGreen
+            .work
+                width: 100%
+                @include centerize
+                flex-direction: column
+                background-color: $cerulean
+            .contact
+                width: 100%
+                @include centerize
+                flex-direction: column
+                background-color: $yellowRed
+            .coop
+                width: 100%
+                @include centerize
+                flex-direction: column
+                background-color: $tangerine
+            #About
+                padding-top: 2em
+            #Skills
+                padding-top: 2em
+            #Work
+                padding-top: 2em
+            #Contact
+                padding-top: 2em
+            #Coop
+                padding-top: 2em
+            h1
+                font-size: 60px
+                color: $black
+                font-weight: 400
+                letter-spacing: 2px
+            p
+                padding: 0em 8em 0em 8em
+
+.body-right-container
+
     flex: 1
     background-color: $light-blue
 

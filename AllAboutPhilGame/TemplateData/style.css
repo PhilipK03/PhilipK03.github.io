@@ -1,8 +1,6 @@
 body {
   padding: 0;
   margin: 0;
-  height: 100%;
-  width: 100%;
   font-family: "Titillium Web", sans-serif;
 }
 
@@ -20,7 +18,17 @@ body {
   overflow-x: clip;
 }
 
-.color-bar {
+.top-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-flex: 1;
+      -ms-flex: auto;
+          flex: auto;
+}
+
+.top-container .color-bar {
   -webkit-box-flex: initial;
       -ms-flex: initial;
           flex: initial;
@@ -32,44 +40,10 @@ body {
           box-shadow: 0 0 1em 0 #16212bcc;
 }
 
-.top-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 100%;
-  -webkit-box-pack: left;
-      -ms-flex-pack: left;
-          justify-content: left;
-  -webkit-box-flex: 1;
-      -ms-flex: auto;
-          flex: auto;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: column;
-          flex-flow: column;
-}
-
 .top-container .top-container-left {
   -webkit-box-flex: 3;
       -ms-flex: 3;
           flex: 3;
-}
-
-.top-container .top-container-left .name {
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
-  position: relative;
-  top: -0.5em;
-  left: 1em;
-  font-family: "Titillium Web", sans-serif;
-  font-size: 100px;
-  color: #16212bcc;
-  font-weight: 300;
-  letter-spacing: 2px;
-  text-decoration: underline;
-  text-underline-position: under;
-  text-shadow: 5px 1px #53b7fc;
 }
 
 .top-container .top-container-right {
@@ -78,19 +52,16 @@ body {
           flex: 1;
 }
 
-.top-container .top-container-right .body-right-colorBar {
-  height: 100%;
-  background-color: #53b7fc;
-}
-
 .body-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: ce;
-      -ms-flex-align: ce;
-          align-items: ce;
-  width: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
@@ -100,7 +71,7 @@ body {
           flex-direction: row;
 }
 
-.body-left-container {
+.body-container .body-left-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -116,7 +87,28 @@ body {
           flex: 3;
 }
 
-.body-left-container .navbar-container {
+.body-container .body-left-container .name {
+  -webkit-box-flex: 1;
+      -ms-flex: auto;
+          flex: auto;
+}
+
+.body-container .body-left-container .name h1 {
+  position: relative;
+  top: -0.4em;
+  left: -1em;
+  margin: 0;
+  font-family: "Titillium Web", sans-serif;
+  font-size: 100px;
+  color: #16212bcc;
+  font-weight: 300;
+  letter-spacing: 2px;
+  text-decoration: underline;
+  text-underline-position: under;
+  text-shadow: 5px 1px #53b7fc;
+}
+
+.body-container .body-left-container .navbar-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -126,14 +118,19 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-flex: 1;
+      -ms-flex: auto;
+          flex: auto;
   width: 100%;
-  position: relative;
-  padding-bottom: 1em;
+  position: -webkit-sticky;
+  position: sticky;
+  padding-top: 0.5em;
+  background-color: #fefffa;
   border-bottom: 0.2em solid #dce7eb;
-  top: -1em;
+  top: 0em;
 }
 
-.body-left-container .navbar-container ul {
+.body-container .body-left-container .navbar-container ul {
   list-style: none;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -152,7 +149,7 @@ body {
   font-size: 30px;
 }
 
-.body-left-container .navbar-container li a {
+.body-container .body-left-container .navbar-container li a {
   height: 50px;
   margin-left: 1em;
   margin-right: 1em;
@@ -164,12 +161,48 @@ body {
   transition: color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
 }
 
-.body-left-container .navbar-container li a:hover {
+.body-container .body-left-container .navbar-container li a:hover {
   border-bottom-color: #53b7fc;
   color: #23b7f6;
 }
 
-.body-left-container .about-container {
+.body-container .body-left-container .content-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  color: #16212bcc;
+}
+
+.body-container .body-left-container .content-container .about {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #ee6352;
+}
+
+.body-container .body-left-container .content-container .skills {
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -183,38 +216,95 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-flex: 1;
-      -ms-flex: auto;
-          flex: auto;
-  color: #16212bcc;
+  background-color: #59cd90;
 }
 
-.body-left-container .about-container h1 {
+.body-container .body-left-container .content-container .work {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #3fa7d6;
+}
+
+.body-container .body-left-container .content-container .contact {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #fac05e;
+}
+
+.body-container .body-left-container .content-container .coop {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #f79d84;
+}
+
+.body-container .body-left-container .content-container #About {
+  padding-top: 2em;
+}
+
+.body-container .body-left-container .content-container #Skills {
+  padding-top: 2em;
+}
+
+.body-container .body-left-container .content-container #Work {
+  padding-top: 2em;
+}
+
+.body-container .body-left-container .content-container #Contact {
+  padding-top: 2em;
+}
+
+.body-container .body-left-container .content-container #Coop {
+  padding-top: 2em;
+}
+
+.body-container .body-left-container .content-container h1 {
   font-size: 60px;
   color: #16212bcc;
   font-weight: 400;
   letter-spacing: 2px;
-  margin-top: 2em;
 }
 
-.body-left-container .about-container p {
-  padding: 0em 8em 4em 8em;
+.body-container .body-left-container .content-container p {
+  padding: 0em 8em 0em 8em;
 }
 
 .body-right-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
