@@ -8,26 +8,59 @@
     <link rel="stylesheet" href="TemplateData/style.css" />
   </head>
   <body>
+<!-- Container that surrounds the whole site-->
     <div class="main-container">
-      <div class="top-container">
-        <div class="color-bar"></div>
-        
-        
-        <div class="name">Philip Kennedy</div>
-      </div>
+        <div id="Home" class="color-bar"></div>
+<!-- Container for the top section with the gradient and name-->        
+        <div class="top-container">
+            
+<!-- Container for the itemss in the left half of the top bar -->        
+            <div class="top-container-left">
+                <div class="name">Philip Kennedy</div>
+            </div>
+<!-- Container for the items in the right half of the top bar -->            
+            <div class="top-container-right">
+                <div class="body-right-colorBar">test</div>
+            </div>
+        </div>
+<!-- Container for the main content-->
+        <div class="body-container">
+<!-- Container for the content on the left half of the site
+     contains titles and the paragraphs -->            
+            <div class="body-left-container">
+                <div class="navbar-container">
+                    <ul>
+                    <li><a href="#Home">Home</a></li>
+                    <li><a href="#About">About</a></li>
+                    <li><a href="#Skills">Skills</a></li>
+                    <li><a href="#Work">Work</a></li>
+                    <li><a href="#Contact">Contact Me</a></li>
+                    </ul>
+                </div>
+                <div class="about-container">
+                    <h1 id="About">About</h1>
+                    <p>
+                        Hello, welcome to the site that's all about me, myself, and I.
+                        I'm currently a fourth year student of computer science at the University of Guelph. 
+                        If I had to describe myself with one word I would use curious. I'm always interested
+                        in learning new things. If I come upon a new fact or something that I haven't heard of 
+                        I have an indescribable urge to explore and dive in to the unknown. I also apply
+                        myself in the same way, any task that I don't currently have the knowledge to accomplish,
+                        is just another opportunity for me to learn something new!
+                    </p>
+                </div>
+            </div>
+<!-- Container for the content in the right half of the body
+     contains pictures and details -->
+            <div class="body-right-container">
+            <div>
+                Right container
+            </div>
+    
+            </div>
 
-      <div class="navbar-container">
-        <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Skills</a></li>
-          <li><a href="#">Work</a></li>
-          <li><a href="#">Contact Me</a></li>
-        </ul>
-      </div>
-
+        </div>
       <!--Unity Game Player
-
       <div id="unity-container" class="unity-desktop">
         <canvas id="unity-canvas"></canvas>
         <div id="unity-loading-bar">
@@ -43,8 +76,8 @@
           <div id="unity-fullscreen-button"></div>
         </div>
       </div>
-    </div>
 
+    </div>
     <script>
       var buildUrl = "Build";
       var loaderUrl = buildUrl + "/AllAboutPhilGame.loader.js";
@@ -105,7 +138,6 @@
       };
       document.body.appendChild(script);
     </script>
-
     -->
   </body>
 </html>
