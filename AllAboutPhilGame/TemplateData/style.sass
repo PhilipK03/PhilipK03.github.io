@@ -1,14 +1,14 @@
-$blue: #23b7f6
-$light-blue: #53b7fc
+$blue: rgba(35, 183, 246, 0.7)
+$light-blue: rgba(83, 183, 252, 1)
 $white: rgba(254,255,250,1)
 $grey: rgba(220,231,235,1)
 $red: rgba(255,104,115,1)
-$black: #16212bcc
-$opalRed: #ee6352
-$emeraldGreen: #59cd90
-$cerulean: #3fa7d6
-$yellowRed: #fac05e
-$tangerine: #f79d84
+$black: rgba(22, 33, 43, 0.8)
+$opalRed: rgba(238, 99, 82, 0.6)
+$emeraldGreen: rgba(89, 205, 144, 0.6)
+$cerulean: rgba(63, 167, 214, 0.6)
+$yellowRed: rgba(250, 192, 94, 0.6)
+$tangerine: rgba(247, 157, 132, 0.6)
 $sans: 'Titillium Web', sans-serif
 
 @mixin centerize
@@ -38,11 +38,6 @@ body
         width: 100%
         background-image: linear-gradient(90deg, $blue, $light-blue, $white)
         box-shadow: 0 0 1em 0 $black
-    .top-container-left
-        flex: 3
-
-    .top-container-right
-        flex: 1
 
 .body-container
     display: flex
@@ -128,15 +123,25 @@ body
                 flex-direction: column
                 background-color: $tangerine
             #About
-                padding-top: 2em
+                height: 0px
+                position: relative
+                top: -6em
             #Skills
-                padding-top: 2em
+                height: 0px
+                position: relative
+                top: -6em
             #Work
-                padding-top: 2em
+                height: 0px
+                position: relative
+                top: -6em
             #Contact
-                padding-top: 2em
+                height: 0px
+                position: relative
+                top: -6em
             #Coop
-                padding-top: 2em
+                height: 0px
+                position: relative
+                top: -6em
             h1
                 font-size: 60px
                 color: $black
@@ -146,8 +151,11 @@ body
                 padding: 0em 8em 0em 8em
 
 .body-right-container
-
+    display: flex
     flex: 1
+    height: 100vh
+    position: sticky
+    top: -20em
     background-color: $light-blue
 
 /* Unity styling stuff*/
