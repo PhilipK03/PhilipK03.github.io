@@ -1,14 +1,8 @@
-$blue: rgba(35, 183, 246, 0.7)
-$light-blue: rgba(83, 183, 252, 1)
+$bright_blue: rgba(35, 183, 246, 0.7)
+$blue: rgba(101, 200, 255, 1)
 $white: rgba(254,255,250,1)
-$grey: rgba(220,231,235,1)
-$red: rgba(255,104,115,1)
+$grey: #a5acae
 $black: rgba(22, 33, 43, 0.8)
-$opalRed: rgba(238, 99, 82, 0.6)
-$emeraldGreen: rgba(89, 205, 144, 0.6)
-$cerulean: rgba(63, 167, 214, 0.6)
-$yellowRed: rgba(250, 192, 94, 0.6)
-$tangerine: rgba(247, 157, 132, 0.6)
 $sans: 'Titillium Web', sans-serif
 
 @mixin centerize
@@ -16,21 +10,151 @@ $sans: 'Titillium Web', sans-serif
     justify-content: center
     align-items: center
 
+@mixin direction
+    flex-direction: row
+    @media only screen and (max-width: 700px)
+        flex-direction: column
+
+html
+    overflow-y: scroll
+    scrollbar-width: none
+
 body
     padding: 0
     margin: 0
     font-family: $sans
+    -ms-overflow-style: none
+    overflow-y: scroll
+    scrollbar-width: none
 
-.main-container
+body::-webkit-scrollbar
+    display: none
+
+h1
+    margin: 0
+h2
+    margin: 0
+h3
+    margin: 0
+
+.shadow_bar
+    background-image: linear-gradient($grey, $white)
+    width: 100%
+    height: 0.7rem
+
+.main_container
     display: flex
     align-items: center
+    justify-content: center
     flex-flow: column
-    overflow-x: clip
-
-.top-container
-    display: flex
     width: 100%
-    flex: auto
+    overflow-x: clip
+    .header_container
+        flex: 1
+        @include centerize
+        flex-direction: column
+        text-align: center
+        font-family: $sans
+        background-color: $blue
+        width: 100%
+        padding-bottom: 1rem
+        box-shadow: 0px
+        h1
+            font-size: 64px
+            color: $black
+            font-weight: 300
+            letter-spacing: 2px
+            margin-top: 2rem
+            margin-bottom: 0.5rem
+        h3
+            font-size: 15px
+            color: $black
+            font-weight: 300
+            letter-spacing: 2px
+            margin: 0
+
+    .about_container
+        flex: 1
+        display: flex
+        flex-direction: column
+        width: 100%
+        align-items: center
+        .about_header_container
+            display: flex
+            flex-direction: column
+            width: 100%
+            align-items: left
+            h2
+                font-size: 32px
+                color: $black
+                font-weight: 300
+                letter-spacing: 2px
+                position: relative
+                padding: 2rem 0rem 1rem 2rem
+        .about_content_container
+            @include centerize
+            width: 90%
+            background: #DFE4E7
+            border-radius: 28px
+            box-shadow: 0px 3px $grey
+
+            .about_content_main
+                display: flex
+                flex-direction: column
+                .description
+                    display: flex
+                    @include direction
+                    align-items: center
+                    p
+                        flex: 2
+                        text-align: center
+                        margin: 0rem 4rem 0rem 0rem
+                        font-size: 16px
+                        color: $black
+                        font-weight: 300
+                        letter-spacing: 2px
+                        line-height: 2
+                        @media only screen and (max-width: 700px)
+                            margin: 4rem 2rem 0rem 2rem
+                    .selfie
+                        flex: 1
+                        max-width: 250px
+                        margin: 2rem 2rem 0rem 4rem
+
+                .hobbies
+                    display: flex
+                    @include direction
+                    align-items: center
+                    .icons
+                        display: flex
+                        flex: 1
+                        flex-flow: column
+                        align-items: center
+                        max-width: 250px
+                        margin: 2rem 4rem 0rem 4rem
+                        #workout
+                            max-width: 150px
+                    p
+                        flex: 2
+                        text-align: center
+                        margin: 0rem 4rem 0rem 0rem
+                        font-size: 16px
+                        color: $black
+                        font-weight: 300
+                        letter-spacing: 2px
+                        line-height: 2
+                        @media only screen and (max-width: 700px)
+                            margin: 4rem 2rem 0rem 2rem
+                .footer
+                    display: flex
+                    flex-direction: column
+                    width: 90%
+    .footer_container
+        margin-top: 10rem
+/*.top-container
+ display: flex
+ width: 100%
+ flex: auto
 
     .color-bar
         flex: initial
@@ -38,125 +162,124 @@ body
         width: 100%
         background-image: linear-gradient(90deg, $blue, $light-blue, $white)
         box-shadow: 0 0 1em 0 $black
+/*.body-container
+ display: flex
+ align-items: center
+ justify-content: center
+ flex: 1
+ flex-direction: row
+ .body-left-container
+ display: flex
+ align-items: center
+ flex-direction: column
+ flex: 3
+ .name
+ flex: auto
+ h1
+ position: relative
+ top: -0.4em
+ left: -1em
+ margin: 0
+ font-family: $sans
+ font-size: 100px
+ color: $black
+ font-weight: 300
+ letter-spacing: 2px
+ text-decoration: underline
+ text-underline-position: under
+ text-shadow: 5px 1px $light-blue
+ .navbar-container
+ @include centerize
+ flex: auto
+ width: 100%
+ position: sticky
+ padding-top: 0.5em
+ background-color: $white
+ border-bottom: 0.2em solid $grey
+ top: 0em
+ ul
+ list-style: none
+ @include centerize
+ flex-direction: row
+ font-family: $sans
+ font-size: 30px
+ li
+ a
+ height: 50px
+ margin-left: 1em
+ margin-right: 1em
+ text-decoration: none
+ color: $black
+ border-bottom: 0.2em solid $white
+ position: relative
+ transition: color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out
+ &:hover
+ border-bottom-color: $light-blue
+ color: $blue
+ .content-container
+ @include centerize
+ flex-flow: column
+ color: $black
+ .about
+ @include centerize
+ width: 100%
+ flex-direction: column
+ background-color: $opalRed
+ .skills
+ width: 100%
+ @include centerize
+ flex-direction: column
+ background-color: $emeraldGreen
+ .work
+ width: 100%
+ @include centerize
+ flex-direction: column
+ background-color: $cerulean
+ .contact
+ width: 100%
+ @include centerize
+ flex-direction: column
+ background-color: $yellowRed
+ .coop
+ width: 100%
+ @include centerize
+ flex-direction: column
+ background-color: $tangerine
+ #About
+ height: 0px
+ position: relative
+ top: -6em
+ #Skills
+ height: 0px
+ position: relative
+ top: -6em
+ #Work
+ height: 0px
+ position: relative
+ top: -6em
+ #Contact
+ height: 0px
+ position: relative
+ top: -6em
+ #Coop
+ height: 0px
+ position: relative
+ top: -6em
+ h1
+ font-size: 60px
+ color: $black
+ font-weight: 400
+ letter-spacing: 2px
+ p
+ padding: 0em 8em 0em 8em
 
-.body-container
-    display: flex
-    align-items: center
-    justify-content: center
-    flex: 1
-    flex-direction: row
-    .body-left-container
-        display: flex
-        align-items: center
-        flex-direction: column
-        flex: 3
-        .name
-            flex: auto
-            h1
-                position: relative
-                top: -0.4em
-                left: -1em
-                margin: 0
-                font-family: $sans
-                font-size: 100px
-                color: $black
-                font-weight: 300
-                letter-spacing: 2px
-                text-decoration: underline
-                text-underline-position: under
-                text-shadow: 5px 1px $light-blue
-        .navbar-container
-            @include centerize
-            flex: auto
-            width: 100%
-            position: sticky
-            padding-top: 0.5em
-            background-color: $white
-            border-bottom: 0.2em solid $grey
-            top: 0em
-            ul
-                list-style: none
-                @include centerize
-                flex-direction: row
-                font-family: $sans
-                font-size: 30px
-            li
-                a
-                    height: 50px
-                    margin-left: 1em
-                    margin-right: 1em
-                    text-decoration: none
-                    color: $black
-                    border-bottom: 0.2em solid $white
-                    position: relative
-                    transition: color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out
-                    &:hover
-                        border-bottom-color: $light-blue
-                        color: $blue
-        .content-container
-            @include centerize
-            flex-flow: column
-            color: $black
-            .about
-                @include centerize
-                width: 100%
-                flex-direction: column
-                background-color: $opalRed
-            .skills
-                width: 100%
-                @include centerize
-                flex-direction: column
-                background-color: $emeraldGreen
-            .work
-                width: 100%
-                @include centerize
-                flex-direction: column
-                background-color: $cerulean
-            .contact
-                width: 100%
-                @include centerize
-                flex-direction: column
-                background-color: $yellowRed
-            .coop
-                width: 100%
-                @include centerize
-                flex-direction: column
-                background-color: $tangerine
-            #About
-                height: 0px
-                position: relative
-                top: -6em
-            #Skills
-                height: 0px
-                position: relative
-                top: -6em
-            #Work
-                height: 0px
-                position: relative
-                top: -6em
-            #Contact
-                height: 0px
-                position: relative
-                top: -6em
-            #Coop
-                height: 0px
-                position: relative
-                top: -6em
-            h1
-                font-size: 60px
-                color: $black
-                font-weight: 400
-                letter-spacing: 2px
-            p
-                padding: 0em 8em 0em 8em
-
-.body-right-container
-    display: flex
-    flex: 1
-    height: 100vh
-    position: sticky
-    top: -20em
-    background-color: $light-blue
+/*.body-right-container
+ display: flex
+ flex: 1
+ height: 100vh
+ position: sticky
+ top: -20em
+ background-color: $light-blue
 
 /* Unity styling stuff*/
 
