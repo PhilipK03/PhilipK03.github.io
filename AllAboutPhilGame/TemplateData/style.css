@@ -35,6 +35,14 @@ h3 {
   height: 0.7rem;
 }
 
+.line {
+  width: 90%;
+  margin: 4rem 0 5rem 0;
+  border-top-width: 5px;
+  border-top-style: solid;
+  border-color: #a5acae;
+}
+
 .main_container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -133,7 +141,7 @@ h3 {
   font-weight: 300;
   letter-spacing: 2px;
   position: relative;
-  padding: 2rem 0rem 1rem 2rem;
+  padding: 2rem 0rem 1rem 5rem;
 }
 
 .main_container .about_container .about_content_container {
@@ -218,20 +226,12 @@ h3 {
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+      -ms-flex-flow: row;
+          flex-flow: row;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-}
-
-@media only screen and (max-width: 700px) {
-  .main_container .about_container .about_content_container .about_content_main .hobbies {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
+  width: 100%;
 }
 
 .main_container .about_container .about_content_container .about_content_main .hobbies .icons {
@@ -253,7 +253,7 @@ h3 {
 }
 
 .main_container .about_container .about_content_container .about_content_main .hobbies .icons #workout {
-  max-width: 150px;
+  max-width: 100px;
 }
 
 .main_container .about_container .about_content_container .about_content_main .hobbies p {
@@ -275,7 +275,7 @@ h3 {
   }
 }
 
-.main_container .about_container .about_content_container .about_content_main .footer {
+.main_container .about_container .about_content_container .about_content_main .about_content_footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -283,7 +283,106 @@ h3 {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 90%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+}
+
+.main_container .about_container .about_content_container .about_content_main .about_content_footer .top_row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 1rem;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+@media only screen and (max-width: 950px) {
+  .main_container .about_container .about_content_container .about_content_main .about_content_footer .top_row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.main_container .about_container .about_content_container .about_content_main .about_content_footer .top_row .icon {
+  width: 50px;
+  height: 50px;
+}
+
+.main_container .about_container .about_content_container .about_content_main .about_content_footer .top_row #github {
+  margin-left: 4rem;
+}
+
+@media only screen and (max-width: 950px) {
+  .main_container .about_container .about_content_container .about_content_main .about_content_footer .top_row #github {
+    margin: 0rem;
+  }
+}
+
+.main_container .about_container .about_content_container .about_content_main .about_content_footer .top_row p {
+  font-size: 16px;
+  color: rgba(22, 33, 43, 0.8);
+  font-weight: 300;
+  letter-spacing: 2px;
+  line-height: 2;
+  padding: 2rem 4rem 2rem 1rem;
+}
+
+@media only screen and (max-width: 950px) {
+  .main_container .about_container .about_content_container .about_content_main .about_content_footer .top_row p {
+    padding: 0rem;
+  }
+}
+
+.main_container .technical_skills_container {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main_container .technical_skills_container .technical_skills_header_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  -webkit-box-align: left;
+      -ms-flex-align: left;
+          align-items: left;
+}
+
+.main_container .technical_skills_container .technical_skills_header_container h2 {
+  font-size: 32px;
+  color: rgba(22, 33, 43, 0.8);
+  font-weight: 300;
+  letter-spacing: 2px;
+  position: relative;
+  padding: 2rem 0rem 1rem 5rem;
 }
 
 .main_container .footer_container {
