@@ -12,7 +12,7 @@ $sans: 'Titillium Web', sans-serif
 
 @mixin direction
     flex-direction: row
-    @media only screen and (max-width: 700px)
+    @media only screen and (max-width: 897px)
         flex-direction: column
 
 html
@@ -50,7 +50,13 @@ h3
     margin: 4rem 0 5rem 0
     border-top-width: 5px
     border-top-style: solid
-    border-color: $grey
+    border-color: $blue
+.thin_line
+    width: 90%
+    margin: 2rem 0 3rem 0
+    border-top-width: 2px
+    border-top-style: solid
+    border-color: $blue
 
 .main_container
     display: flex
@@ -108,52 +114,78 @@ h3
             box-shadow: 0px 3px $grey
             .about_content_main
                 display: flex
+                flex: 1
+                width: 100%
                 flex-direction: column
+                align-items: center
                 .description
                     display: flex
                     @include direction
                     align-items: center
+                    justify-content: center
                     p
                         flex: 2
                         text-align: center
-                        margin: 0rem 4rem 0rem 0rem
+                        padding-right: 4rem
                         font-size: 16px
                         color: $black
                         font-weight: 300
                         letter-spacing: 2px
                         line-height: 2
-                        @media only screen and (max-width: 700px)
-                            margin: 4rem 2rem 0rem 2rem
-                    .selfie
+                        @media only screen and (max-width: 897px)
+                            margin: 3rem 3rem 0rem 3rem
+                            padding-right: 0rem
+                    div
                         flex: 1
-                        max-width: 250px
                         margin: 2rem 2rem 0rem 4rem
-
-                .hobbies
+                        @media only screen and (max-width: 897px)
+                            margin: 2rem 3rem 0rem 3rem
+                        img
+                            max-width: 350px
+                .hobbies_content_container
                     display: flex
-                    flex-flow: row
+                    flex-direction: column
                     align-items: center
                     width: 100%
-                    .icons
+                    .hobbies_header_container
                         display: flex
-                        flex: 1
-                        flex-flow: column
+                        flex-direction: row
+                        width: 100%
                         align-items: center
-                        max-width: 250px
-                        margin: 2rem 4rem 0rem 4rem
-                        #workout
+                        justify-content: center
+                        h1
+                            text-align: center
+                            font-size: 28px
+                            color: $black
+                            font-weight: 300
+                            letter-spacing: 2px
+                            margin-bottom: 1.5rem
+                    .hobbies_content_widget
+                        display: flex
+                        flex-direction: row
+                        align-items: center
+                        justify-content: center
+                        margin: 2rem 2rem 0rem 2rem
+                        img
                             max-width: 100px
-                    p
-                        flex: 2
-                        text-align: center
-                        margin: 0rem 4rem 0rem 0rem
-                        font-size: 16px
-                        color: $black
-                        font-weight: 300
-                        letter-spacing: 2px
-                        line-height: 2
-                        @media only screen and (max-width: 700px)
-                            margin: 4rem 2rem 0rem 2rem
+                            margin: 0rem 8rem 0rem 8rem
+                            @media only screen and (max-width: 897px)
+                                margin: 0rem 2rem 0rem 2rem
+                            @media only screen and (max-width: 529px)
+                                margin: 0rem 1rem 0rem 1rem
+                        p
+                            text-align: center
+                            margin: 0rem 8rem 0rem 8rem
+                            font-size: 16px
+                            color: $black
+                            font-weight: 300
+                            letter-spacing: 2px
+                            line-height: 2
+                            @media only screen and (max-width: 897px)
+                                margin: 0rem 2rem 0rem 2rem
+                            @media only screen and (max-width: 529px)
+                                margin: 0rem 1rem 0rem 1rem
+
                 .about_content_footer
                     display: flex
                     flex-direction: row
@@ -186,11 +218,15 @@ h3
                         order: 3
                         @media only screen and (max-width: 897px)
                             order: 2
+                        @media only screen and (max-width: 487px)
+                            order: 3
                     #email
                         flex: 1
                         order: 2
                         @media only screen and (max-width: 897px)
                             order: 3
+                        @media only screen and (max-width: 487px)
+                            order: 2
 
     .technical_skills_container
         flex: 1
@@ -233,11 +269,27 @@ h3
                     border: 1px solid #000000
                     box-sizing: border-box
                     border-radius: 10px
-                .skillBarInner
-                    width: 80%
-                    height: 20px
-                    background: #65C8FF
-                    border-radius: 9px
+                    div
+                        height: 20px
+                        background: #65C8FF
+                        border-radius: 9px
+                    #figma
+                        width: 80%
+                    #html
+                        width: 90%
+                    #css
+                        width: 85%
+                    #react
+                        width: 50%
+                    #js
+                        width: 35%
+                    #c
+                        width: 75%
+                    #git
+                        width: 100%
+                    #office
+                        width: 80%
+
     .experience_container
         flex: 1
         display: flex
@@ -294,6 +346,56 @@ h3
                     letter-spacing: 2px
                     position: relative
                     padding: 0.5rem 1rem 0rem 1rem
+    .education_container
+        flex: 1
+        display: flex
+        flex-direction: column
+        width: 100%
+        align-items: center
+        .education_header_container
+            display: flex
+            flex-direction: column
+            width: 100%
+            align-items: left
+            h2
+                font-size: 32px
+                color: $black
+                font-weight: 300
+                letter-spacing: 2px
+                position: relative
+                padding: 2rem 0rem 1rem 5rem
+        .education_content_container
+            display: flex
+            flex-wrap: wrap
+            width: 100%
+            align-items: center
+            justify-content: center
+            .education_content_widget
+                display: flex
+                flex-direction: column
+                flex-basis: 40%
+                flex-grow: 1
+                align-items: left
+                background: #DFE4E7
+                border-radius: 28px
+                box-shadow: 0px 3px $grey
+                padding: 1rem 1rem 1rem 1rem
+                margin: 1rem 2rem 0rem 2rem
+                h2
+                    font-size: 24px
+                    color: $black
+                    font-weight: 500
+                    letter-spacing: 2px
+                    position: relative
+                    padding: 0.5rem 1rem 0.5rem 1rem
+                p
+                    font-size: 16px
+                    color: $black
+                    font-weight: 300
+                    letter-spacing: 2px
+                    position: relative
+                    padding: 0.5rem 1rem 0rem 1rem
+
     .footer_container
         margin-top: 10rem
 /*.top-container

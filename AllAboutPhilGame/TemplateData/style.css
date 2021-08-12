@@ -44,7 +44,15 @@ h3 {
   margin: 4rem 0 5rem 0;
   border-top-width: 5px;
   border-top-style: solid;
-  border-color: #a5acae;
+  border-color: #65c8ff;
+}
+
+.thin_line {
+  width: 90%;
+  margin: 2rem 0 3rem 0;
+  border-top-width: 2px;
+  border-top-style: solid;
+  border-color: #65c8ff;
 }
 
 .main_container {
@@ -169,10 +177,17 @@ h3 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  width: 100%;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .main_container .about_container .about_content_container .about_content_main .description {
@@ -186,9 +201,12 @@ h3 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 897px) {
   .main_container .about_container .about_content_container .about_content_main .description {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -202,7 +220,7 @@ h3 {
       -ms-flex: 2;
           flex: 2;
   text-align: center;
-  margin: 0rem 4rem 0rem 0rem;
+  padding-right: 4rem;
   font-size: 16px;
   color: rgba(22, 33, 43, 0.8);
   font-weight: 300;
@@ -210,62 +228,107 @@ h3 {
   line-height: 2;
 }
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 897px) {
   .main_container .about_container .about_content_container .about_content_main .description p {
-    margin: 4rem 2rem 0rem 2rem;
+    margin: 3rem 3rem 0rem 3rem;
+    padding-right: 0rem;
   }
 }
 
-.main_container .about_container .about_content_container .about_content_main .description .selfie {
+.main_container .about_container .about_content_container .about_content_main .description div {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
-  max-width: 250px;
   margin: 2rem 2rem 0rem 4rem;
 }
 
-.main_container .about_container .about_content_container .about_content_main .hobbies {
+@media only screen and (max-width: 897px) {
+  .main_container .about_container .about_content_container .about_content_main .description div {
+    margin: 2rem 3rem 0rem 3rem;
+  }
+}
+
+.main_container .about_container .about_content_container .about_content_main .description div img {
+  max-width: 350px;
+}
+
+.main_container .about_container .about_content_container .about_content_main .hobbies_content_container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
+  -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-flow: row;
-          flex-flow: row;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   width: 100%;
 }
 
-.main_container .about_container .about_content_container .about_content_main .hobbies .icons {
+.main_container .about_container .about_content_container .about_content_main .hobbies_content_container .hobbies_header_container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
-  -webkit-box-orient: vertical;
+  -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-flow: column;
-          flex-flow: column;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 100%;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  max-width: 250px;
-  margin: 2rem 4rem 0rem 4rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
-.main_container .about_container .about_content_container .about_content_main .hobbies .icons #workout {
-  max-width: 100px;
-}
-
-.main_container .about_container .about_content_container .about_content_main .hobbies p {
-  -webkit-box-flex: 2;
-      -ms-flex: 2;
-          flex: 2;
+.main_container .about_container .about_content_container .about_content_main .hobbies_content_container .hobbies_header_container h1 {
   text-align: center;
-  margin: 0rem 4rem 0rem 0rem;
+  font-size: 28px;
+  color: rgba(22, 33, 43, 0.8);
+  font-weight: 300;
+  letter-spacing: 2px;
+  margin-bottom: 1.5rem;
+}
+
+.main_container .about_container .about_content_container .about_content_main .hobbies_content_container .hobbies_content_widget {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 2rem 2rem 0rem 2rem;
+}
+
+.main_container .about_container .about_content_container .about_content_main .hobbies_content_container .hobbies_content_widget img {
+  max-width: 100px;
+  margin: 0rem 8rem 0rem 8rem;
+}
+
+@media only screen and (max-width: 897px) {
+  .main_container .about_container .about_content_container .about_content_main .hobbies_content_container .hobbies_content_widget img {
+    margin: 0rem 2rem 0rem 2rem;
+  }
+}
+
+@media only screen and (max-width: 529px) {
+  .main_container .about_container .about_content_container .about_content_main .hobbies_content_container .hobbies_content_widget img {
+    margin: 0rem 1rem 0rem 1rem;
+  }
+}
+
+.main_container .about_container .about_content_container .about_content_main .hobbies_content_container .hobbies_content_widget p {
+  text-align: center;
+  margin: 0rem 8rem 0rem 8rem;
   font-size: 16px;
   color: rgba(22, 33, 43, 0.8);
   font-weight: 300;
@@ -273,9 +336,15 @@ h3 {
   line-height: 2;
 }
 
-@media only screen and (max-width: 700px) {
-  .main_container .about_container .about_content_container .about_content_main .hobbies p {
-    margin: 4rem 2rem 0rem 2rem;
+@media only screen and (max-width: 897px) {
+  .main_container .about_container .about_content_container .about_content_main .hobbies_content_container .hobbies_content_widget p {
+    margin: 0rem 2rem 0rem 2rem;
+  }
+}
+
+@media only screen and (max-width: 529px) {
+  .main_container .about_container .about_content_container .about_content_main .hobbies_content_container .hobbies_content_widget p {
+    margin: 0rem 1rem 0rem 1rem;
   }
 }
 
@@ -355,6 +424,14 @@ h3 {
   }
 }
 
+@media only screen and (max-width: 487px) {
+  .main_container .about_container .about_content_container .about_content_main .about_content_footer #linkedin {
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
+  }
+}
+
 .main_container .about_container .about_content_container .about_content_main .about_content_footer #email {
   -webkit-box-flex: 1;
       -ms-flex: 1;
@@ -369,6 +446,14 @@ h3 {
     -webkit-box-ordinal-group: 4;
         -ms-flex-order: 3;
             order: 3;
+  }
+}
+
+@media only screen and (max-width: 487px) {
+  .main_container .about_container .about_content_container .about_content_main .about_content_footer #email {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
   }
 }
 
@@ -462,11 +547,42 @@ h3 {
   border-radius: 10px;
 }
 
-.main_container .technical_skills_container .technical_skills_main_container .skill_content_widget .skillBarInner {
-  width: 80%;
+.main_container .technical_skills_container .technical_skills_main_container .skill_content_widget .skillBarOuter div {
   height: 20px;
   background: #65C8FF;
   border-radius: 9px;
+}
+
+.main_container .technical_skills_container .technical_skills_main_container .skill_content_widget .skillBarOuter #figma {
+  width: 80%;
+}
+
+.main_container .technical_skills_container .technical_skills_main_container .skill_content_widget .skillBarOuter #html {
+  width: 90%;
+}
+
+.main_container .technical_skills_container .technical_skills_main_container .skill_content_widget .skillBarOuter #css {
+  width: 85%;
+}
+
+.main_container .technical_skills_container .technical_skills_main_container .skill_content_widget .skillBarOuter #react {
+  width: 50%;
+}
+
+.main_container .technical_skills_container .technical_skills_main_container .skill_content_widget .skillBarOuter #js {
+  width: 35%;
+}
+
+.main_container .technical_skills_container .technical_skills_main_container .skill_content_widget .skillBarOuter #c {
+  width: 75%;
+}
+
+.main_container .technical_skills_container .technical_skills_main_container .skill_content_widget .skillBarOuter #git {
+  width: 100%;
+}
+
+.main_container .technical_skills_container .technical_skills_main_container .skill_content_widget .skillBarOuter #office {
+  width: 80%;
 }
 
 .main_container .experience_container {
@@ -567,6 +683,103 @@ h3 {
 }
 
 .main_container .experience_container .experience_content_container .experience_content_widget p {
+  font-size: 16px;
+  color: rgba(22, 33, 43, 0.8);
+  font-weight: 300;
+  letter-spacing: 2px;
+  position: relative;
+  padding: 0.5rem 1rem 0rem 1rem;
+}
+
+.main_container .education_container {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main_container .education_container .education_header_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  -webkit-box-align: left;
+      -ms-flex-align: left;
+          align-items: left;
+}
+
+.main_container .education_container .education_header_container h2 {
+  font-size: 32px;
+  color: rgba(22, 33, 43, 0.8);
+  font-weight: 300;
+  letter-spacing: 2px;
+  position: relative;
+  padding: 2rem 0rem 1rem 5rem;
+}
+
+.main_container .education_container .education_content_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.main_container .education_container .education_content_container .education_content_widget {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-preferred-size: 40%;
+      flex-basis: 40%;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  -webkit-box-align: left;
+      -ms-flex-align: left;
+          align-items: left;
+  background: #DFE4E7;
+  border-radius: 28px;
+  -webkit-box-shadow: 0px 3px #a5acae;
+          box-shadow: 0px 3px #a5acae;
+  padding: 1rem 1rem 1rem 1rem;
+  margin: 1rem 2rem 0rem 2rem;
+}
+
+.main_container .education_container .education_content_container .education_content_widget h2 {
+  font-size: 24px;
+  color: rgba(22, 33, 43, 0.8);
+  font-weight: 500;
+  letter-spacing: 2px;
+  position: relative;
+  padding: 0.5rem 1rem 0.5rem 1rem;
+}
+
+.main_container .education_container .education_content_container .education_content_widget p {
   font-size: 16px;
   color: rgba(22, 33, 43, 0.8);
   font-weight: 300;
