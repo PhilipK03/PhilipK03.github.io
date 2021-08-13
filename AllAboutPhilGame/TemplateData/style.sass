@@ -2,6 +2,7 @@ $bright_blue: rgba(35, 183, 246, 0.7)
 $blue: rgba(101, 200, 255, 1)
 $white: rgba(254,255,250,1)
 $grey: #a5acae
+$darkGrey: #919798
 $black: rgba(22, 33, 43, 0.8)
 $sans: 'Titillium Web', sans-serif
 
@@ -48,7 +49,7 @@ h3
 .line
     width: 90%
     margin: 4rem 0 5rem 0
-    border-top-width: 5px
+    border-top-width: 4px
     border-top-style: solid
     border-color: $blue
 .thin_line
@@ -319,7 +320,9 @@ h3
                 flex-direction: column
                 flex-basis: 40%
                 flex-grow: 1
+                min-height: 300px
                 align-items: left
+                justify-content: space-evenly
                 background: #DFE4E7
                 border-radius: 28px
                 box-shadow: 0px 3px $grey
@@ -346,6 +349,14 @@ h3
                     letter-spacing: 2px
                     position: relative
                     padding: 0.5rem 1rem 0rem 1rem
+                #date
+                    text-align: right
+                    font-size: 12px
+                    color: $grey
+                    font-weight: 300
+                    letter-spacing: 2px
+                    position: relative
+
     .education_container
         flex: 1
         display: flex
