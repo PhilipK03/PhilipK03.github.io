@@ -801,6 +801,33 @@ h3 {
   padding: 0.5rem 1rem 0rem 1rem;
 }
 
+.main_container .education_container .education_content_container .education_content_widget .widget_bottom_row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main_container .education_container .education_content_container .education_content_widget .widget_bottom_row p {
+  font-size: 16px;
+  font-weight: 500;
+  -ms-flex-preferred-size: 80%;
+      flex-basis: 80%;
+}
+
+.main_container .education_container .education_content_container .education_content_widget .widget_bottom_row img {
+  max-height: 100px;
+}
+
 .main_container .footer_container {
   margin-top: 10rem;
 }
