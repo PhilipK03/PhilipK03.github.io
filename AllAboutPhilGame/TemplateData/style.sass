@@ -1,6 +1,7 @@
 $bright_blue: rgba(35, 183, 246, 0.7)
 $blue: rgba(101, 200, 255, 1)
 $white: rgba(254,255,250,1)
+$fadedWhite: #fefffacb
 $grey: #a5acae
 $darkGrey: #919798
 $black: rgba(22, 33, 43, 0.8)
@@ -67,28 +68,74 @@ h3
     width: 100%
     overflow-x: clip
     .header_container
-        flex: 1
-        @include centerize
-        flex-direction: column
-        text-align: center
+        display: flex
         font-family: $sans
         background-color: $blue
+        flex-direction: row
+        flex-wrap: no-wrap
         width: 100%
         padding-bottom: 1rem
         box-shadow: 0px
-        h1
-            font-size: 64px
-            color: $black
-            font-weight: 300
-            letter-spacing: 2px
-            margin-top: 2rem
-            margin-bottom: 0.5rem
-        h3
-            font-size: 15px
-            color: $black
-            font-weight: 300
-            letter-spacing: 2px
-            margin: 0
+        justify-content: center
+        .header_left_col
+            display: flex
+            justify-content: end
+            flex-direction: column
+            text-align: left
+            flex-basis: 10%
+            flex-grow: 1
+            margin: 0em 0em 0.5em 3em
+            /*width: 100%
+            a
+                font-size: 20px
+                color: $black
+                font-weight: 500
+                letter-spacing: 2px
+                margin: 0
+                text-decoration: underline
+                transition: color 0.4s ease-in-out, border-color 0.5s ease-in-out, text-shadow 0.1s ease-in-out
+                &:hover
+                    color: $fadedWhite
+
+        .header_center_col
+            @include centerize
+            flex-direction: column
+            text-align: center
+            flex-basis: 80%
+            margin: 0em 1.5em 0em 1.5em
+            h1
+                font-size: 64px
+                color: $black
+                font-weight: 300
+                letter-spacing: 2px
+                margin-top: 2rem
+                margin-bottom: 0.5rem
+            h3
+                font-size: 15px
+                color: $black
+                font-weight: 300
+                letter-spacing: 2px
+                margin: 0
+        .header_right_col
+            display: flex
+            justify-content: end
+            flex-direction: column
+            text-align: right
+            flex-basis: 10%
+            flex-grow: 1
+            margin: 0em 3em 0.5em 0em
+            /*width: 100%
+            a
+                font-size: 20px
+                color: $black
+                font-weight: 500
+                letter-spacing: 2px
+                margin: 0
+                text-decoration: underline
+                transition: color 0.4s ease-in-out, border-color 0.5s ease-in-out, text-shadow 0.1s ease-in-out
+                &:hover
+                    color: $fadedWhite
+
     .about_container
         flex: 1
         display: flex
