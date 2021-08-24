@@ -792,6 +792,15 @@ h3 {
   padding: 0.5rem 1rem 0.5rem 1rem;
 }
 
+.main_container .education_container .education_content_container .education_content_widget h3 {
+  font-size: 20px;
+  color: #65c8ff;
+  font-weight: 300;
+  letter-spacing: 2px;
+  position: relative;
+  padding: 0rem 1rem 0rem 1rem;
+}
+
 .main_container .education_container .education_content_container .education_content_widget p {
   font-size: 16px;
   color: rgba(22, 33, 43, 0.8);
@@ -817,11 +826,20 @@ h3 {
           align-items: center;
 }
 
+.main_container .education_container .education_content_container .education_content_widget .widget_bottom_row h3 {
+  font-size: 18px;
+  color: #65c8ff;
+  font-weight: 300;
+  letter-spacing: 2px;
+  position: relative;
+}
+
 .main_container .education_container .education_content_container .education_content_widget .widget_bottom_row p {
   font-size: 16px;
   font-weight: 500;
   -ms-flex-preferred-size: 80%;
       flex-basis: 80%;
+  line-height: 1.8em;
 }
 
 .main_container .education_container .education_content_container .education_content_widget .widget_bottom_row img {
@@ -832,134 +850,6 @@ h3 {
   margin-top: 10rem;
 }
 
-/*.top-container
- display: flex
- width: 100%
- flex: auto
-
-    .color-bar
-        flex: initial
-        height: 5em
-        width: 100%
-        background-image: linear-gradient(90deg, $blue, $light-blue, $white)
-        box-shadow: 0 0 1em 0 $black */
-/*.body-container
- display: flex
- align-items: center
- justify-content: center
- flex: 1
- flex-direction: row
- .body-left-container
- display: flex
- align-items: center
- flex-direction: column
- flex: 3
- .name
- flex: auto
- h1
- position: relative
- top: -0.4em
- left: -1em
- margin: 0
- font-family: $sans
- font-size: 100px
- color: $black
- font-weight: 300
- letter-spacing: 2px
- text-decoration: underline
- text-underline-position: under
- text-shadow: 5px 1px $light-blue
- .navbar-container
- @include centerize
- flex: auto
- width: 100%
- position: sticky
- padding-top: 0.5em
- background-color: $white
- border-bottom: 0.2em solid $grey
- top: 0em
- ul
- list-style: none
- @include centerize
- flex-direction: row
- font-family: $sans
- font-size: 30px
- li
- a
- height: 50px
- margin-left: 1em
- margin-right: 1em
- text-decoration: none
- color: $black
- border-bottom: 0.2em solid $white
- position: relative
- transition: color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out
- &:hover
- border-bottom-color: $light-blue
- color: $blue
- .content-container
- @include centerize
- flex-flow: column
- color: $black
- .about
- @include centerize
- width: 100%
- flex-direction: column
- background-color: $opalRed
- .skills
- width: 100%
- @include centerize
- flex-direction: column
- background-color: $emeraldGreen
- .work
- width: 100%
- @include centerize
- flex-direction: column
- background-color: $cerulean
- .contact
- width: 100%
- @include centerize
- flex-direction: column
- background-color: $yellowRed
- .coop
- width: 100%
- @include centerize
- flex-direction: column
- background-color: $tangerine
- #About
- height: 0px
- position: relative
- top: -6em
- #Skills
- height: 0px
- position: relative
- top: -6em
- #Work
- height: 0px
- position: relative
- top: -6em
- #Contact
- height: 0px
- position: relative
- top: -6em
- #Coop
- height: 0px
- position: relative
- top: -6em
- h1
- font-size: 60px
- color: $black
- font-weight: 400
- letter-spacing: 2px
- p
- padding: 0em 8em 0em 8em */
-/*.body-right-container
- display: flex
- flex: 1
- height: 100vh
- position: sticky
- top: -20em
- background-color: $light-blue */
 /* Unity styling stuff*/
 #unity-container {
   display: -webkit-box;
