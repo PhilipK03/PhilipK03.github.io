@@ -374,7 +374,7 @@ h3 {
 }
 
 .main_container .about_container .about_content_container .about_content_main .goals_content_container .goals_description_content p {
-  text-align: center;
+  text-align: left;
   font-size: 16px;
   color: rgba(22, 33, 43, 0.8);
   font-weight: 300;
@@ -406,24 +406,25 @@ h3 {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin: 0em 4em 0em 4em;
+  margin: 2em 4em 0em 4em;
 }
 
 .main_container .about_container .about_content_container .about_content_main .goals_content_container .goals_table_content .goals_content_widget h3 {
-  font-size: 20px;
+  font-size: 18px;
   color: #65c8ff;
-  font-weight: 300;
+  font-weight: 600;
   letter-spacing: 2px;
   text-align: center;
 }
 
 .main_container .about_container .about_content_container .about_content_main .goals_content_container .goals_table_content .goals_content_widget p {
   text-align: center;
-  font-size: 16px;
+  font-size: 14px;
   color: rgba(22, 33, 43, 0.8);
   font-weight: 300;
   letter-spacing: 2px;
   line-height: 2;
+  margin: 1em 0em 0em 0em;
 }
 
 .main_container .position_container {
@@ -484,7 +485,7 @@ h3 {
 }
 
 .main_container .position_container .position_content_container p {
-  text-align: center;
+  text-align: left;
   font-size: 16px;
   color: rgba(22, 33, 43, 0.8);
   font-weight: 300;
@@ -537,12 +538,10 @@ h3 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   width: 90%;
   background: #DFE4E7;
   border-radius: 28px;
@@ -551,13 +550,29 @@ h3 {
 }
 
 .main_container .experience_container .experience_content_container p {
-  text-align: center;
+  text-align: left;
   font-size: 16px;
   color: rgba(22, 33, 43, 0.8);
   font-weight: 300;
   letter-spacing: 2px;
   line-height: 2;
   margin: 3em 2em 3em 2em;
+}
+
+.main_container .experience_container .experience_content_container div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.main_container .experience_container .experience_content_container div img {
+  margin: 1em 0.5em 0em 0.5em;
+  max-width: 250px;
 }
 
 .main_container .goals_dev_container {
@@ -618,7 +633,7 @@ h3 {
 }
 
 .main_container .goals_dev_container .goals_dev_content_container p {
-  text-align: center;
+  text-align: left;
   font-size: 16px;
   color: rgba(22, 33, 43, 0.8);
   font-weight: 300;
