@@ -115,18 +115,6 @@ h3 {
   /*width: 100% */
 }
 
-<<<<<<< HEAD
-.top-container .color-bar {
-  -webkit-box-flex: initial;
-      -ms-flex: initial;
-          flex: initial;
-  height: 5em;
-  width: 100%;
-  background-image: -webkit-gradient(linear, left top, right top, from(rgba(238, 99, 82, 0.6)), color-stop(rgba(247, 157, 132, 0.6)), color-stop(rgba(250, 192, 94, 0.6)), color-stop(rgba(89, 205, 144, 0.6)), to(rgba(63, 167, 214, 0.6)));
-  background-image: linear-gradient(90deg, rgba(238, 99, 82, 0.6), rgba(247, 157, 132, 0.6), rgba(250, 192, 94, 0.6), rgba(89, 205, 144, 0.6), rgba(63, 167, 214, 0.6));
-  -webkit-box-shadow: 0 0 1em 0 rgba(22, 33, 43, 0.8);
-          box-shadow: 0 0 1em 0 rgba(22, 33, 43, 0.8);
-=======
 .main_container .header_container .header_left_col a {
   font-size: 20px;
   color: rgba(22, 33, 43, 0.8);
@@ -140,7 +128,6 @@ h3 {
 
 .main_container .header_container .header_left_col a:hover {
   color: #fefffacb;
->>>>>>> in-progress
 }
 
 .main_container .header_container .header_center_col {
@@ -252,14 +239,8 @@ h3 {
   color: rgba(22, 33, 43, 0.8);
   font-weight: 300;
   letter-spacing: 2px;
-<<<<<<< HEAD
-  text-decoration: underline;
-  text-underline-position: under;
-  text-shadow: 5px 1px rgba(83, 183, 252, 0.8);
-=======
   position: relative;
   padding: 2rem 0rem 1rem 5rem;
->>>>>>> in-progress
 }
 
 .main_container .about_container .about_content_container {
@@ -393,21 +374,9 @@ h3 {
   text-align: center;
   font-size: 28px;
   color: rgba(22, 33, 43, 0.8);
-<<<<<<< HEAD
-  border-bottom: 0.2em solid #fefffa;
-  position: relative;
-  -webkit-transition: color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
-  transition: color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
-}
-
-.body-container .body-left-container .navbar-container li a:hover {
-  border-bottom-color: rgba(83, 183, 252, 0.8);
-  color: rgba(35, 183, 246, 0.7);
-=======
   font-weight: 300;
   letter-spacing: 2px;
   margin-bottom: 1.5rem;
->>>>>>> in-progress
 }
 
 .main_container .about_container .about_content_container .about_content_main .hobbies_content_container .hobbies_content_widget {
@@ -600,15 +569,10 @@ h3 {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-<<<<<<< HEAD
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(238, 99, 82, 0.6)), color-stop(85%), to(rgba(247, 157, 132, 0.6)));
-  background-image: linear-gradient(rgba(238, 99, 82, 0.6), 85%, rgba(247, 157, 132, 0.6));
-=======
   width: 100%;
   -webkit-box-align: left;
       -ms-flex-align: left;
           align-items: left;
->>>>>>> in-progress
 }
 
 .main_container .technical_skills_container .technical_skills_header_container h2 {
@@ -719,15 +683,10 @@ h3 {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-<<<<<<< HEAD
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(247, 157, 132, 0.6)), color-stop(85%), to(rgba(250, 192, 94, 0.6)));
-  background-image: linear-gradient(rgba(247, 157, 132, 0.6), 85%, rgba(250, 192, 94, 0.6));
-=======
   width: 100%;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
->>>>>>> in-progress
 }
 
 .main_container .experience_container .experience_header_container {
@@ -776,10 +735,6 @@ h3 {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-<<<<<<< HEAD
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(250, 192, 94, 0.6)), color-stop(85%), to(rgba(89, 205, 144, 0.6)));
-  background-image: linear-gradient(rgba(250, 192, 94, 0.6), 85%, rgba(89, 205, 144, 0.6));
-=======
   -ms-flex-preferred-size: 40%;
       flex-basis: 40%;
   -webkit-box-flex: 1;
@@ -798,7 +753,6 @@ h3 {
           box-shadow: 0px 3px #a5acae;
   padding: 1rem 1rem 1rem 1rem;
   margin: 1rem 2rem 0rem 2rem;
->>>>>>> in-progress
 }
 
 .main_container .experience_container .experience_content_container .experience_content_widget h2 {
@@ -862,15 +816,10 @@ h3 {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-<<<<<<< HEAD
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(89, 205, 144, 0.6)), color-stop(85%), to(rgba(63, 167, 214, 0.6)));
-  background-image: linear-gradient(rgba(89, 205, 144, 0.6), 85%, rgba(63, 167, 214, 0.6));
-=======
   width: 100%;
   -webkit-box-align: left;
       -ms-flex-align: left;
           align-items: left;
->>>>>>> in-progress
 }
 
 .main_container .education_container .education_header_container h2 {
@@ -905,9 +854,6 @@ h3 {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-<<<<<<< HEAD
-  background-color: rgba(63, 167, 214, 0.6);
-=======
   -ms-flex-preferred-size: 40%;
       flex-basis: 40%;
   -webkit-box-flex: 1;
@@ -922,7 +868,6 @@ h3 {
           box-shadow: 0px 3px #a5acae;
   padding: 1rem 1rem 1rem 1rem;
   margin: 1rem 2rem 0rem 2rem;
->>>>>>> in-progress
 }
 
 .main_container .education_container .education_content_container .education_content_widget h2 {
@@ -988,23 +933,8 @@ h3 {
   max-height: 100px;
 }
 
-<<<<<<< HEAD
-.body-right-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
-  height: 100vh;
-  position: -webkit-sticky;
-  position: sticky;
-  top: -20em;
-  background-color: rgba(83, 183, 252, 0.8);
-=======
 .main_container .footer_container {
   margin-top: 10rem;
->>>>>>> in-progress
 }
 
 /* Unity styling stuff*/
@@ -1107,4 +1037,4 @@ h3 {
   padding: 10px;
   display: none;
 }
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=styleHome.css.map */
