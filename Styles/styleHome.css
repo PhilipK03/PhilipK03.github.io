@@ -337,6 +337,7 @@ h3 {
 
 .main_container .about_container .about_content_container .about_content_main .description div img {
   max-width: 350px;
+  border: solid 1px #65c8ff;
 }
 
 .main_container .about_container .about_content_container .about_content_main .hobbies_content_container {
